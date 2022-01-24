@@ -7,7 +7,7 @@ public class Change : MonoBehaviour
 {
     public void SceneChange()
     {
-        SceneManager.LoadScene("GamePage");
+        SceneManager.LoadScene("ground");
     }
 
     // Start is called before the first frame update
