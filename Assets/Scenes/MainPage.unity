@@ -1054,6 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6096a809d174c9e40a11d2346e09b445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   name1: {fileID: 1941046025}
 --- !u!1 &748462434
 GameObject:
@@ -1333,6 +1334,10 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790379529
+=======
+  p1: {fileID: 1941046025}
+--- !u!1 &748462434
+>>>>>>> b1853d10a50a973a9f1fd23691855a6bf7b59ca8
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1931,7 +1936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c98b7f59289674d82f57c917730bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name2: {fileID: 32771884}
+  p2: {fileID: 0}
 --- !u!1 &1704230703
 GameObject:
   m_ObjectHideFlags: 0

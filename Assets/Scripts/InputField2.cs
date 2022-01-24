@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class InputField2 : MonoBehaviour
 {
-    public Text name2;
+    //private PlayerManager Player2;
+
+    public Text p2;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Player2 = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame
@@ -18,8 +20,8 @@ public class InputField2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log(name2);
-            
+            //Player2.characterName2 = text.p2;
+            Debug.Log(p2);
         }
     }
 }
