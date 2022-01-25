@@ -14,8 +14,8 @@ public class Player1Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerManager PM = GameObject.Find("Player1").GetComponent<PlayerManager>();
-        P1Name = PM.PlayerName1;
+        //PlayerManager PM = GameObject.Find("Player1").GetComponent<PlayerManager>();
+        //P1Name = PM.PlayerName1;
     }
 
     // Update is called once per frame
