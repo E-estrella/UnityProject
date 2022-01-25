@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         // GameName에 있는 변수 불러오기
-        GameName gamaname  = GameObject.Find("Start").GetComponent<GameName>();
+        GameName gamaname  = GameObject.Find("NameManagement").GetComponent<GameName>();
         PlayerName1 = gamaname.Player1;
         PlayerName2 = gamaname.Player2;
     }

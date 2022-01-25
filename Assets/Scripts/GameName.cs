@@ -11,6 +11,11 @@ public class GameName : MonoBehaviour
 
     public string Player1, Player2;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // 버튼 누르면 작동
     public void GameStart()
     {
@@ -19,7 +24,7 @@ public class GameName : MonoBehaviour
         // "PlayerName1"이라는 이름으로 PlayerName1 텍스트 값을 저장
         PlayerPrefs.SetString("PlayerName1", PlayerName1.text);
         PlayerPrefs.SetString("PlayerName2", PlayerName2.text);
-        PlayerPrefs.Save();
+        //PlayerPrefs.Save();
     }
 
     // Start is called before the first frame update
