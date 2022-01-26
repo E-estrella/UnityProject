@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Player1Move : MonoBehaviour
 {
     // 플레이어1 닉네임 변수
-    string P1Name;
+    //string P1Name;
 
     // text 변수
-    public Text text1;
+    //public Text text1;
     
     // Start is called before the first frame update
     void Start()
