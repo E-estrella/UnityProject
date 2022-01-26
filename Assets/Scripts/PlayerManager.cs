@@ -17,14 +17,14 @@ public class PlayerManager : MonoBehaviour
         //PlayerName1 = gamaname.Player1;
         //PlayerName2 = gamaname.Player2;
 
-        //if (gameObject.name == "Player1")
-        //{
-        //    PlayerName.text = gamaname.Player1;
-        //}
-        //else if (gameObject.name == "Player2")
-        //{
-            //PlayerName.text = gamaname.Player2;
-       // }
+        if (gameObject.name == "Player1")
+        {
+            PlayerName.text = gamaname.Player1;
+        }
+        else if (gameObject.name == "Player2")
+        {
+            PlayerName.text = gamaname.Player2;
+        }
     }
 
     // Update is called once per frame

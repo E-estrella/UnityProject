@@ -5,22 +5,61 @@ using UnityEngine.UI;
 
 public class Player2Move : MonoBehaviour
 {
-    // 플레이어1 닉네임 변수
-    string P2Name;
+    Rigidbody2D myRigid;
 
-    // text 변수
-    public Text text2;
+    Vector2 playerPosition;
+
+    public float moveSpeed = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        //PlayerManager PM = GameObject.Find("Player2").GetComponent<PlayerManager>();
-        //P2Name = PM.PlayerName2;
+        myRigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Move();
+    }
+
+    // 캐릭터 이동(방향, 스피드, Time.deltaTime)
+    public void Move()
+    {
+        //playerPosition = transform.position;
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+
+
+            //playerPosition += Vector2.up * moveSpeed * Time.deltaTime;
+            //myRigid.MovePosition(playerPosition);
+            //transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+
+            myRigid.AddForce(new Vector2(0, 10));
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            //transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            myRigid.AddForce(new Vector2(10, 0));
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+
+            //transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+            myRigid.AddForce(new Vector2(-10, 0));
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+
+            //playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
+            //myRigid.MovePosition(playerPosition);
+            //transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+
+            myRigid.AddForce(new Vector2(0, -10));
+        }
     }
 }
