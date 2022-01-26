@@ -26,26 +26,30 @@ public class Player1Move : MonoBehaviour
     // 캐릭터 이동(방향, 스피드, Time.deltaTime)
     public void Move()
     {
-        playerPosition = transform.position;
+        //playerPosition = transform.position;
 
         if(Input.GetKey(KeyCode.W))
         {
-            
+
 
             //playerPosition += Vector2.up * moveSpeed * Time.deltaTime;
             //myRigid.MovePosition(playerPosition);
-            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+            //transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+
+            myRigid.AddForce(new Vector2(0, 10));
         }
 
         if(Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            //transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            myRigid.AddForce(new Vector2(10, 0));
         }
 
         if(Input.GetKey(KeyCode.A))
         {
-            
-            transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+
+            //transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+            myRigid.AddForce(new Vector2(-10, 0));
         }
 
         if(Input.GetKey(KeyCode.S))
@@ -53,7 +57,9 @@ public class Player1Move : MonoBehaviour
 
             //playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
             //myRigid.MovePosition(playerPosition);
-            transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+            //transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+
+            myRigid.AddForce(new Vector2(0, -10));
         }
     }
 
