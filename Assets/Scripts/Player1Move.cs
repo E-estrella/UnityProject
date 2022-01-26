@@ -45,7 +45,7 @@ public class Player1Move : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             
-            transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
 
         if(Input.GetKey(KeyCode.S))
@@ -53,17 +53,18 @@ public class Player1Move : MonoBehaviour
 
             //playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
             //myRigid.MovePosition(playerPosition);
-            transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
         }
     }
 
     // 키보드 입력값을 받음
-    /*private void GetInput()
+    /*private Vector2 GetInput()
     {
         Vector2 moveVector;
         moveVector.x = Input.GetAxisRaw("Horizontal");
         moveVector.y = Input.GetAxisRaw("Vertical");
 
-        direction = moveVector;
+        Vector2 direction = moveVector;
+        return direction;
     }*/
 }
