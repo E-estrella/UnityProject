@@ -26,20 +26,20 @@ public class Player1Move : MonoBehaviour
         Jump
     }
 
-    //PlayerState p_State;
+    PlayerState p_State;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
 
-        anim = GetComponent<Animator>();
+        anim = GameObject.Find("Player1").GetComponent<Animator>();
 
-        //p_State = PlayerState.Idle;
+        p_State = PlayerState.Idle;
 
-        //player1 = GameObject.Find("Player1").transform;
+        player1 = GameObject.Find("Player1").transform;
 
-        //cc = GetComponent<CharacterController>();
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -61,36 +61,37 @@ public class Player1Move : MonoBehaviour
         //}
 
         //else anim.SetBool("IdleToRun", false);
+        //Move();
 
 
-        //switch (p_State)
-        //{
-        //    case PlayerState.Idle:
-        //        Idle();
-        //        break;
-        //    case PlayerState.Run:
-        //        Move();
-        //        break;
-        //    case PlayerState.Attack:
-        //        //Attack();
-        //        break;
-        //    case PlayerState.Jump:
-        //        //Jump();
-        //        break;
-        //}
+        switch (p_State)
+        {
+            case PlayerState.Idle:
+                Idle();
+                break;
+            case PlayerState.Run:
+                Move();
+                break;
+            case PlayerState.Attack:
+                //Attack();
+                break;
+            case PlayerState.Jump:
+                //Jump();
+                break;
+        }
     }
 
-    //void Idle()
-    //{
-    //    if(Input.anyKeyDown)
-    //    {
-    //        p_State = PlayerState.Run;
-    //        print("상태 전환: Idle -> Move");
-    //    }
-    //}
+    void Idle()
+    {
+        if (Input.anyKeyDown)
+        {
+            p_State = PlayerState.Run;
+            print("상태 전환: Idle -> Move");
+        }
+    }
 
     // 캐릭터 이동(방향, 스피드, Time.deltaTime)
-    public void Move()
+    void Move()
     {
         //playerPosition = transform.position;
 

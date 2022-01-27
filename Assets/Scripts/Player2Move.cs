@@ -6,25 +6,85 @@ using UnityEngine.UI;
 public class Player2Move : MonoBehaviour
 {
     Rigidbody2D myRigid;
+    Animator anim;
+    Transform player2;
+
+    CharacterController cc;
+    PlayerState p_State;
 
     Vector2 playerPosition;
 
     public float moveSpeed = 1.0f;
 
+    enum PlayerState
+    {
+        Idle,
+        Run,
+        Attack,
+        Jump
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
+        anim = GameObject.Find("Player2").GetComponent<Animator>();
+
+        p_State = PlayerState.Idle;
+
+        player2 = GameObject.Find("Player2").transform;
+
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        //float h = Input.GetAxis("Horizontal");
+        //if (h > 0)
+        //{
+        //    transform.localScale = new Vector2(-1, 1);
+        //    anim.SetBool("IdleToRun", true);
+        //    Move();
+        //}
+
+        //else if (h < 0)
+        //{
+        //    transform.localScale = new Vector2(1, 1);
+        //    anim.SetBool("IdleToRun", true);
+        //    Move();
+        //}
+
+        //else anim.SetBool("IdleToRun", false);
+        //Move();
+
+        switch (p_State)
+        {
+            case PlayerState.Idle:
+                Idle();
+                break;
+            case PlayerState.Run:
+                Move();
+                break;
+            case PlayerState.Attack:
+                //Attack();
+                break;
+            case PlayerState.Jump:
+                //Jump();
+                break;
+        }
+    }
+    void Idle()
+    {
+        if (Input.anyKeyDown)
+        {
+            p_State = PlayerState.Run;
+            print("상태 전환: Idle -> Move");
+        }
     }
 
     // 캐릭터 이동(방향, 스피드, Time.deltaTime)
-    public void Move()
+    void Move()
     {
         //playerPosition = transform.position;
 
