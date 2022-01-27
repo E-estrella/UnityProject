@@ -45,22 +45,22 @@ public class Player1Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        if (h > 0)
-        {
-            transform.localScale = new Vector2(-1, 1);
-            anim.SetBool("IdleToRun", true);
-            Move();
-        }
+        //float h = Input.GetAxis("Horizontal");
+        //if (h > 0)
+        //{
+        //    transform.localScale = new Vector2(-1, 1);
+        //    anim.SetBool("IdleToRun", true);
+        //    Move();
+        //}
 
-        else if (h < 0)
-        {
-            transform.localScale = new Vector2(1, 1);
-            anim.SetBool("IdleToRun", true);
-            Move();
-        }
+        //else if (h < 0)
+        //{
+        //    transform.localScale = new Vector2(1, 1);
+        //    anim.SetBool("IdleToRun", true);
+        //    Move();
+        //}
 
-        else anim.SetBool("IdleToRun", false);
+        //else anim.SetBool("IdleToRun", false);
 
 
         //switch (p_State)
