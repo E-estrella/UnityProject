@@ -33,6 +33,8 @@ public class Player2Move : MonoBehaviour
             myRigid.AddForce(new Vector2(-10, 0));
         }
 
+        else anim.SetBool("IdleToRun", false);
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.localScale = new Vector2(1, 1);
@@ -46,6 +48,8 @@ public class Player2Move : MonoBehaviour
             anim.SetBool("moving", true);
             myRigid.AddForce(new Vector2(0, -10));
         }
+
+        else anim.SetBool("moving", false);
     }
 }
 
