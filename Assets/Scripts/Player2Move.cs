@@ -19,63 +19,31 @@ public class Player2Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        if (h > 0)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.localScale = new Vector2(-1, 1);
             anim.SetBool("IdleToRun", true);
-            Move();
-        }
-
-        else if (h < 0)
-        {
-            transform.localScale = new Vector2(1, 1);
-            anim.SetBool("IdleToRun", true);
-            Move();
-        }
-
-        else anim.SetBool("IdleToRun", false);
-        Move();
-
-        float v = Input.GetAxis("Vertical");
-        if (v > 0)
-        {
-            transform.localScale = new Vector2(1, 1);
-            anim.SetBool("moving", true);
-            Move();
-        }
-
-        else if (v < 0)
-        {
-            transform.localScale = new Vector2(1, 1);
-            anim.SetBool("moving", true);
-            Move();
-        }
-
-        else anim.SetBool("moving", false);
-        Move();
-    }
-   
-    // 캐릭터 이동(방향, 스피드, Time.deltaTime)
-    void Move()
-    {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            myRigid.AddForce(new Vector2(0, 10));
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
             myRigid.AddForce(new Vector2(10, 0));
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
+            transform.localScale = new Vector2(1, 1);
+            anim.SetBool("IdleToRun", true);
             myRigid.AddForce(new Vector2(-10, 0));
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
+            transform.localScale = new Vector2(1, 1);
+            anim.SetBool("moving", true);
+            myRigid.AddForce(new Vector2(0, 10));
+        }
+
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.localScale = new Vector2(1, 1);
+            anim.SetBool("moving", true);
             myRigid.AddForce(new Vector2(0, -10));
         }
     }
@@ -143,3 +111,29 @@ public class Player2Move : MonoBehaviour
 //playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
 //myRigid.MovePosition(playerPosition);
 //transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+
+//else anim.SetBool("IdleToRun", false);
+
+// 캐릭터 이동(방향, 스피드, Time.deltaTime)
+//void Move()
+//{
+//    if (Input.GetKey(KeyCode.UpArrow))
+//    {
+//        myRigid.AddForce(new Vector2(0, 10));
+//    }
+
+//    if (Input.GetKey(KeyCode.RightArrow))
+//    {
+//        myRigid.AddForce(new Vector2(10, 0));
+//    }
+
+//    if (Input.GetKey(KeyCode.LeftArrow))
+//    {
+//        myRigid.AddForce(new Vector2(-10, 0));
+//    }
+
+//    if (Input.GetKey(KeyCode.DownArrow))
+//    {
+//        myRigid.AddForce(new Vector2(0, -10));
+//    }
+//}
