@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Change : MonoBehaviour
+public class Change1 : MonoBehaviour
 {
     // Scenes 전환을 위한 코드
     public void SceneChange()
     {
-        SceneManager.LoadScene("description");
+        SceneManager.LoadScene("ground");
     }
 
     // Start is called before the first frame update
