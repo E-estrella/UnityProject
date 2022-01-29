@@ -123,6 +123,78 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16021548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16021549}
+  - component: {fileID: 16021550}
+  m_Layer: 0
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16021549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16021548}
+  m_LocalRotation: {x: -0, y: -0, z: -0.027810648, w: 0.9996132}
+  m_LocalPosition: {x: 1.31, y: 0.19, z: 0}
+  m_LocalScale: {x: 1, y: 1.9237499, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1152133661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16021550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16021548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 2.5272584
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &27816370
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27816371}
   - component: {fileID: 27816372}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +224,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &27816372
 SpriteRenderer:
@@ -215,7 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46419240}
   - component: {fileID: 46419241}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,78 +483,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &99748555
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 99748557}
-  - component: {fileID: 99748556}
-  m_Layer: 0
-  m_Name: Freeform Light 2D (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &99748556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99748555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LightType: 1
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_UseNormalMap: 0
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
-  m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_PointLightDistance: 3
-  m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 11.91
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
---- !u!4 &99748557
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99748555}
-  m_LocalRotation: {x: -0.15858951, y: -0, z: -0, w: 0.9873447}
-  m_LocalPosition: {x: 11.79, y: -10.09, z: 0.08}
-  m_LocalScale: {x: 0.6391054, y: 0.16033696, z: 0.89699}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: -18.25, y: 0, z: 0}
 --- !u!1 &165095937
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165095938}
   - component: {fileID: 165095939}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &165095939
 SpriteRenderer:
@@ -699,7 +699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 194388442}
   - component: {fileID: 194388443}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &194388443
 SpriteRenderer:
@@ -867,7 +867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201274598}
   - component: {fileID: 201274599}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268636877}
   - component: {fileID: 268636878}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &268636878
 SpriteRenderer:
@@ -1031,7 +1031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312379874}
   - component: {fileID: 312379875}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &312379875
 SpriteRenderer:
@@ -1113,7 +1113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319836779}
   - component: {fileID: 319836780}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1319,7 +1319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340308159}
   - component: {fileID: 340308160}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,7 +1525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405135033}
   - component: {fileID: 405135034}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &405135034
 SpriteRenderer:
@@ -1607,7 +1607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453852048}
   - component: {fileID: 453852049}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1626,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &453852049
 SpriteRenderer:
@@ -2016,7 +2016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551493822}
   - component: {fileID: 551493823}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2927,7 +2927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 964201209}
   - component: {fileID: 964201210}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2946,7 +2946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &964201210
 SpriteRenderer:
@@ -3052,7 +3052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015609824}
   - component: {fileID: 1015609825}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3071,7 +3071,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1015609825
 SpriteRenderer:
@@ -3277,6 +3277,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1977237134}
+  - {fileID: 16021549}
   - {fileID: 312379874}
   - {fileID: 194388442}
   - {fileID: 27816371}
@@ -3409,7 +3410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1208743058}
   - component: {fileID: 1208743059}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3807,7 +3808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439634591}
   - component: {fileID: 1439634592}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3911,7 +3912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639c18814d0eade4abc1e9aa8e0fcc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 20
 --- !u!212 &1464482388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4026,78 +4027,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1524123130
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1524123132}
-  - component: {fileID: 1524123131}
-  m_Layer: 0
-  m_Name: Freeform Light 2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1524123131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524123130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LightType: 1
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_UseNormalMap: 0
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
-  m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_PointLightDistance: 3
-  m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 11.91
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
---- !u!4 &1524123132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524123130}
-  m_LocalRotation: {x: -0.15858951, y: -0, z: -0, w: 0.9873447}
-  m_LocalPosition: {x: -12.58, y: -10.02, z: 0.06}
-  m_LocalScale: {x: 0.6391054, y: 0.16033696, z: 0.89699}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: -18.25, y: 0, z: 0}
 --- !u!1 &1539714556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6648,7 +6577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1569822683}
   - component: {fileID: 1569822684}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6730,7 +6659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730388503}
   - component: {fileID: 1730388504}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6749,7 +6678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1152133661}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1730388504
 SpriteRenderer:
@@ -7346,7 +7275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b655dc825a61f54d9c8e635bc7f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 20
 --- !u!212 &1831685705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17495,7 +17424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934749286}
   - component: {fileID: 1934749287}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17577,7 +17506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977237134}
   - component: {fileID: 1977237135}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18039,7 +17968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103301512}
   - component: {fileID: 2103301513}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18121,7 +18050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145324989}
   - component: {fileID: 2145324990}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: small Potions_6 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
