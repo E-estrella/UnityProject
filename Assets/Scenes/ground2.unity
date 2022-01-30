@@ -12262,7 +12262,6 @@ GameObject:
   - component: {fileID: 1972426421}
   - component: {fileID: 1972426420}
   - component: {fileID: 1972426419}
-  - component: {fileID: 1972426423}
   - component: {fileID: 1972426422}
   m_Layer: 0
   m_Name: Monster
@@ -12349,7 +12348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972426418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.83, y: 6.96, z: 0}
+  m_LocalPosition: {x: 13.05, y: 5.52, z: 0}
   m_LocalScale: {x: -10.911806, y: 8.854237, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12364,25 +12363,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972426418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
+  m_Script: {fileID: 11500000, guid: bc02cbabb68d84770bec68e6e1d15cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 11d6ba319fcfb4ea89222a6314d347fb, type: 2}
---- !u!114 &1972426423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972426418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"SpeedX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"SpeedY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+  Monster: {fileID: 0}
