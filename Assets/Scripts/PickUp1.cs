@@ -7,8 +7,14 @@ public class PickUp1 : MonoBehaviour
     public GameObject explosionFactory;
     public GameObject explosionFactory2;
     public GameObject slotItem;
+    //오디오 클립
+    public AudioClip Boom;
+    public AudioClip Get;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //오디오 클립
+        
+
         if (collision.tag.Equals("Player"))
         {
             
@@ -19,6 +25,9 @@ public class PickUp1 : MonoBehaviour
                 GameObject explosion = Instantiate(explosionFactory);
                 explosion.transform.position = transform.position;
                 //Destroy(this.gameObject);
+                //오디오 할당(꽝일 때)
+                AudioSource.PlayClipAtPoint(Boom, transform.position);
+
             }
             // 그렇지 않으면
             else
@@ -36,6 +45,8 @@ public class PickUp1 : MonoBehaviour
                         Destroy(this.gameObject);
                         break;
                     }
+                    //오디오 할당(얻었을 때)
+                    AudioSource.PlayClipAtPoint(Get, transform.position);
                     Destroy(this.gameObject);
                 }
                 
