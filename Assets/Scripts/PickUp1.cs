@@ -15,7 +15,7 @@ public class PickUp1 : MonoBehaviour
         //오디오 클립
         
 
-        if (collision.tag.Equals("Player"))
+        if (collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
         {
             
             // 0부터 9(10-1) 까지 값중에 하나를 랜덤으로 가져와서
