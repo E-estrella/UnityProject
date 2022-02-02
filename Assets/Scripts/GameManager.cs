@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Vector3[] Pointlist;
+
     public Text timeText;
     private float time;
 
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
 
         timeText.text = Mathf.Ceil(time).ToString();
 
-        // 게임이 종료되었을 때(보물상자가 소진되었을 때)
+        // ?????? ?????????? ??(?????????? ?????????? ??)
         if (time == 0)
         {
             Time.timeScale = 0f;
