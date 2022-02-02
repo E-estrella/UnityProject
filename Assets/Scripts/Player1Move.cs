@@ -54,7 +54,6 @@ public class Player1Move : MonoBehaviour
         }
 
         else anim.SetBool("moving1", false);
-        
     }
 }
 

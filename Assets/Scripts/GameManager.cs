@@ -8,12 +8,14 @@ public class GameManager : MonoBehaviour
     public Vector3[] Pointlist;
 
     public Text timeText;
-    private float time;
+    public float time;
+
+    //GameObject popup = GameObject.Find("Panel");
 
     // Start is called before the first frame update
     void Start()
     {
-        time = 60f;
+        time = 10f;
     }
 
     // Update is called once per frame
@@ -26,11 +28,11 @@ public class GameManager : MonoBehaviour
 
         timeText.text = Mathf.Ceil(time).ToString();
 
-        // ?????? ?????????? ??(?????????? ?????????? ??)
-        if (time == 0)
-        {
-            Time.timeScale = 0f;
-            //Panel.SetActive(true);
-        }
+        // 시간이 소진되면 팝업창
+        //if (time <= 0)
+        //{
+        //    Time.timeScale = 0f;
+        //    popup.SetActive(true);
+        //}
     }
 }
