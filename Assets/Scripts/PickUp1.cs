@@ -7,6 +7,7 @@ public class PickUp1 : MonoBehaviour
     public GameObject explosionFactory;
     public GameObject explosionFactory2;
     public GameObject slotItem;
+    public GameObject slotItem2;
     //오디오 클립
     public AudioClip Boom;
     public AudioClip Get;
@@ -35,7 +36,6 @@ public class PickUp1 : MonoBehaviour
                 GameObject explosion = Instantiate(explosionFactory2);
                 explosion.transform.position = transform.position;
                 AudioSource.PlayClipAtPoint(Get, transform.position);
-                //Destroy(this.gameObject);
                 if (collision.tag.Equals("Player1"))
                 {
                     Inventory1 inven = collision.GetComponent<Inventory1>();
@@ -51,6 +51,22 @@ public class PickUp1 : MonoBehaviour
 
                     }
                 }
+                else if (collision.tag.Equals("Player2"))
+                {
+                    Inventory2 inven = collision.GetComponent<Inventory2>();
+                    for (int i = 0; i < inven.slots.Count; i++)
+                    {
+                        if (inven.slots[i].isEmpty)
+                        {
+                            Instantiate(slotItem2, inven.slots[i].slotObj2.transform, false);
+                            inven.slots[i].isEmpty = false;
+                            Destroy(this.gameObject);
+                            break;
+                        }
+
+                    }
+                }
+                Destroy(this.gameObject);
             }
             //Destroy(this.gameObject);     
         }
