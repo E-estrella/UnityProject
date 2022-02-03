@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class g1_time : MonoBehaviour
+public class g2_time : MonoBehaviour
 {
-    [SerializeField] float setTime = 60.0f;
+    [SerializeField] float setTime = 180.0f;
     [SerializeField] Text countdownText;
+
+    [SerializeField]
+    Text timerText;
 
     //GameObject popup = GameObject.Find("Panel");
 
     // Start is called before the first frame update
     void Start()
     {
-        countdownText.text = setTime.ToString();
+        
     }
 
     // Update is called once per frame
@@ -25,12 +28,5 @@ public class g1_time : MonoBehaviour
             Time.timeScale = 0.0f;
 
         countdownText.text = Mathf.Round(setTime).ToString();
-        
-        //// 시간이 소진되면 팝업창
-        //if (gm.time <= 0)
-        //{
-        //    Time.timeScale = 0f;
-        //    popup.SetActive(true);
-        //}
     }
 }
