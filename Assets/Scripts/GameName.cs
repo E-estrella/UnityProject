@@ -33,6 +33,7 @@ public class GameName : MonoBehaviour
         {
             Player1 = PlayerPrefs.GetString("PlayerName1");
 
+            // Player1이 있는 경우에만 Player2 확인
             if (PlayerPrefs.HasKey("PlayerName2"))
             {
                 Player2 = PlayerPrefs.GetString("PlayerName2");
