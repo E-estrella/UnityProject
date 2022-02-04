@@ -70,7 +70,7 @@ public class Player1Move : MonoBehaviour
         Vector2 direction = moveVector;
         return direction;
     }*/
-}
+
 
 
 
