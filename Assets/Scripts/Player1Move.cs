@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player1Move : MonoBehaviour
 {
-    // ¾Ö´Ï¸ŞÀÌÅÍ º¯¼ö
+    // ì• ë‹ˆë©”ì´í„° ë³€ìˆ˜
     Animator anim;
 
     Rigidbody2D myRigid;
@@ -48,14 +48,29 @@ public class Player1Move : MonoBehaviour
 
         else if (Input.GetKey(KeyCode.S))
         {
+
             anim.SetBool("moving1", true);
             transform.localScale = new Vector2(1, 1);
             myRigid.AddForce(new Vector2(0, -10));
+
         }
 
         else anim.SetBool("moving1", false);
     }
 }
+
+
+    // í‚¤ë³´ë“œ ì…ë ¥ê°’ì„ ë°›ìŒ
+    /*private Vector2 GetInput()
+    {
+        Vector2 moveVector;
+        moveVector.x = Input.GetAxisRaw("Horizontal");
+        moveVector.y = Input.GetAxisRaw("Vertical");
+
+        Vector2 direction = moveVector;
+        return direction;
+    }*/
+
 
 
 
@@ -111,7 +126,7 @@ public class Player1Move : MonoBehaviour
 //    if (Input.anyKeyDown)
 //    {
 //        p_State = PlayerState.Run;
-//        print("»óÅÂ ÀüÈ¯: Idle -> Move");
+//        print("ìƒíƒœ ì „í™˜: Idle -> Move");
 //    }
 //}
 
@@ -122,7 +137,7 @@ public class Player1Move : MonoBehaviour
 //transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
 
 
-// Ä³¸¯ÅÍ ÀÌµ¿(¹æÇâ, ½ºÇÇµå, Time.deltaTime)
+// ìºë¦­í„° ì´ë™(ë°©í–¥, ìŠ¤í”¼ë“œ, Time.deltaTime)
 //void Move()
 //{
 //    if(Input.GetKey(KeyCode.W))
