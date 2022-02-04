@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     public Vector3[] Pointlist;
 
     //public Text timeText;
-    //public float time;
+
+    public float time;
+
 
     //GameObject popup = GameObject.Find("Panel");
 

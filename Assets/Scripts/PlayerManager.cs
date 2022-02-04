@@ -10,16 +10,24 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // GameName?? ???? ???? ????????
-        GameName gamename  = GameObject.Find("NameManagement").GetComponent<GameName>();
-        
-        if (gameObject.name == "Player1")
+
+        GameObject nm = GameObject.Find("NameManagement");
+        if (nm != null)
+
         {
-            PlayerName.text = gamename.Player1;
-        }
-        else if (gameObject.name == "Player2")
-        {
-            PlayerName.text = gamename.Player2;
+            // GameName�� �ִ� ���� �ҷ����
+            GameName gamename = nm.GetComponent<GameName>();
+            if (gamename != null)
+            {
+                if (gameObject.name == "Player1")
+                {
+                    PlayerName.text = gamename.Player1;
+                }
+                else if (gameObject.name == "Player2")
+                {
+                    PlayerName.text = gamename.Player2;
+                }
+            }
         }
     }
 
