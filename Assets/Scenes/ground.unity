@@ -284,8 +284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
   explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  slotItem2: {fileID: 0}
+  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
+  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
 --- !u!61 &168785841

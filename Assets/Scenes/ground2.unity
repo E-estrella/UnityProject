@@ -10052,6 +10052,7 @@ GameObject:
   - component: {fileID: 388788916}
   - component: {fileID: 388788915}
   - component: {fileID: 388788917}
+  - component: {fileID: 388788918}
   m_Layer: 6
   m_Name: player1_outter
   m_TagString: Untagged
@@ -10219,6 +10220,20 @@ MonoBehaviour:
   whatisPlatform:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &388788918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388788911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58f482752a3d974ab56325c08302d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+  slotPrefab: {fileID: 891620935785815118, guid: c626bd38294cf714f82dccb00aecc2d5, type: 3}
 --- !u!1 &429625930
 GameObject:
   m_ObjectHideFlags: 0
@@ -11726,9 +11741,8 @@ MonoBehaviour:
   - {x: -3, y: -1, z: -1}
   - {x: 0, y: 0, z: 0}
   - {x: 3, y: -1, z: -1}
-
+  - {x: 1.1283126e+27, y: 4.760142e+30, z: 939846.56}
   time: 0
-
 --- !u!4 &716870473
 Transform:
   m_ObjectHideFlags: 0
@@ -11898,7 +11912,7 @@ GameObject:
   - component: {fileID: 915654755}
   - component: {fileID: 915654757}
   m_Layer: 6
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12019,7 +12033,7 @@ GameObject:
   - component: {fileID: 918856997}
   - component: {fileID: 918856999}
   m_Layer: 6
-  m_Name: Text
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
