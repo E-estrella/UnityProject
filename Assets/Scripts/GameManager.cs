@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public Vector3[] Pointlist;
 
-    public Text timeText;
+    //public Text timeText;
     public float time;
 
     //GameObject popup = GameObject.Find("Panel");
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
             time -= Time.deltaTime;
         }
 
-        timeText.text = Mathf.Ceil(time).ToString();
+        //timeText.text = Mathf.Ceil(time).ToString();
 
         // 시간이 소진되면 팝업창
         //if (time <= 0)
