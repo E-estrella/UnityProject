@@ -8,10 +8,15 @@ public class g2_time : MonoBehaviour
     [SerializeField] float setTime = 180.0f;
     [SerializeField] Text countdownText;
 
+    [SerializeField]
+    Text timerText;
+
+    //GameObject popup = GameObject.Find("Panel");
+
     // Start is called before the first frame update
     void Start()
     {
-        countdownText.text = setTime.ToString();
+        
     }
 
     // Update is called once per frame

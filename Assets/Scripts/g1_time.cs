@@ -8,8 +8,6 @@ public class g1_time : MonoBehaviour
     [SerializeField] float setTime = 60.0f;
     [SerializeField] Text countdownText;
 
-    //GameManager gm = GameObject.Find("MainCamera").GetComponent<GameManager>();
-
     //GameObject popup = GameObject.Find("Panel");
 
     // Start is called before the first frame update
@@ -27,8 +25,8 @@ public class g1_time : MonoBehaviour
             Time.timeScale = 0.0f;
 
         countdownText.text = Mathf.Round(setTime).ToString();
-
-        // 시간이 소진되면 팝업창
+        
+        //// 시간이 소진되면 팝업창
         //if (gm.time <= 0)
         //{
         //    Time.timeScale = 0f;
