@@ -25,9 +25,13 @@ public class ShiftInput : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W & KeyCode.A & KeyCode.S & KeyCode.D))
         {
+            print("키입력");
+
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if(overCollider2d != null)
             {
+                print("충돌!!");
+
                 overCollider2d.transform.GetComponent<Bricks>().MakeColor(PlayerPosition);
             }
         }
