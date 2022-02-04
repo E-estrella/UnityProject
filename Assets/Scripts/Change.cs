@@ -8,7 +8,7 @@ public class Change : MonoBehaviour
     // Scenes 전환을 위한 코드
     public void SceneChange()
     {
-        SceneManager.LoadScene("ground");
+        SceneManager.LoadScene("description");
     }
 
     // Start is called before the first frame update

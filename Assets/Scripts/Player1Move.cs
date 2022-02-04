@@ -5,59 +5,62 @@ using UnityEngine.UI;
 
 public class Player1Move : MonoBehaviour
 {
+    // Ïï†ÎãàÎ©îÏù¥ÌÑ∞ Î≥ÄÏàò
+    Animator anim;
+
     Rigidbody2D myRigid;
 
-    Vector2 playerPosition;
-
-    public float moveSpeed = 1.0f;
+    public float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
+
+        anim = GameObject.Find("Player1").GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (Input.GetKey(KeyCode.D))
+        {
+            anim.SetBool("IdleToRun1", true);
+            transform.localScale = new Vector2(-1, 1);
+            myRigid.AddForce(new Vector2(10, 0));
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            anim.SetBool("IdleToRun1", true);
+            transform.localScale = new Vector2(1, 1);
+            myRigid.AddForce(new Vector2(-10, 0));
+        }
+
+        else anim.SetBool("IdleToRun1", false);
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetBool("moving1", true);
+            transform.localScale = new Vector2(1, 1);
+            myRigid.AddForce(new Vector2(0, 10));
+        }
+
+        else if (Input.GetKey(KeyCode.S))
+        {
+
+            anim.SetBool("moving1", true);
+            transform.localScale = new Vector2(1, 1);
+            myRigid.AddForce(new Vector2(0, -10));
+
+        }
+
+        else anim.SetBool("moving1", false);
     }
+}
 
-    // ƒ≥∏Ø≈Õ ¿Ãµø(πÊ«‚, Ω∫««µÂ, Time.deltaTime)
-    public void Move()
-    {
-        playerPosition = transform.position;
 
-        if(Input.GetKey(KeyCode.W))
-        {
-            
-
-            //playerPosition += Vector2.up * moveSpeed * Time.deltaTime;
-            //myRigid.MovePosition(playerPosition);
-            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-        }
-
-        if(Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        }
-
-        if(Input.GetKey(KeyCode.A))
-        {
-            
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-        }
-
-        if(Input.GetKey(KeyCode.S))
-        {
-
-            //playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
-            //myRigid.MovePosition(playerPosition);
-            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
-        }
-    }
-
-    // ≈∞∫∏µÂ ¿‘∑¬∞™¿ª πﬁ¿Ω
+    // ÌÇ§Î≥¥Îìú ÏûÖÎ†•Í∞íÏùÑ Î∞õÏùå
     /*private Vector2 GetInput()
     {
         Vector2 moveVector;
@@ -68,3 +71,92 @@ public class Player1Move : MonoBehaviour
         return direction;
     }*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Transform player1;
+//Vector2 playerPosition;
+//CharacterController cc;
+//private Vector2 vector;
+
+//player1 = GameObject.Find("Player1").transform;
+//cc = GetComponent<CharacterController>();
+
+
+//enum PlayerState
+//{
+//    Idle,
+//    Run,
+//    Attack,
+//    Jump
+//}
+
+//PlayerState p_State;
+
+//p_State = PlayerState.Idle;
+
+//switch (p_State)
+//{
+//    case PlayerState.Idle:
+//        Idle();
+//        break;
+//    case PlayerState.Run:
+//        Move();
+//        break;
+//    case PlayerState.Attack:
+//        //Attack();
+//        break;
+//    case PlayerState.Jump:
+//        //Jump();
+//        break;
+//}
+
+//void Idle()
+//{
+//    if (Input.anyKeyDown)
+//    {
+//        p_State = PlayerState.Run;
+//        print("ÏÉÅÌÉú Ï†ÑÌôò: Idle -> Move");
+//    }
+//}
+
+//playerPosition = transform.position;
+
+//playerPosition += -Vector2.up * moveSpeed * Time.deltaTime;
+//myRigid.MovePosition(playerPosition);
+//transform.Translate(-Vector2.up * moveSpeed * Time.deltaTime);
+
+
+// Ï∫êÎ¶≠ÌÑ∞ Ïù¥Îèô(Î∞©Ìñ•, Ïä§ÌîºÎìú, Time.deltaTime)
+//void Move()
+//{
+//    if(Input.GetKey(KeyCode.W))
+//    {
+//        myRigid.AddForce(new Vector2(0, 10));
+//    }
+
+//    if(Input.GetKey(KeyCode.D))
+//    {
+//        myRigid.AddForce(new Vector2(10, 0));
+//    }
+
+//    if(Input.GetKey(KeyCode.A))
+//    {
+//        myRigid.AddForce(new Vector2(-10, 0));
+//    }
+
+//    if(Input.GetKey(KeyCode.S))
+//    {
+//        myRigid.AddForce(new Vector2(0, -10));
+//    }
+//}

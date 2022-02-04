@@ -25,11 +25,9 @@ public class GameName : MonoBehaviour
         PlayerPrefs.SetString("PlayerName1", PlayerName1.text);
         PlayerPrefs.SetString("PlayerName2", PlayerName2.text);
         //PlayerPrefs.Save();
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+        print("call GameStart");
+
         // PlayerPrefs에 데이터 있으면 불러와 각 변수에 데이터 저장
         if (PlayerPrefs.HasKey("PlayerName1"))
         {
@@ -41,6 +39,12 @@ public class GameName : MonoBehaviour
                 Player2 = PlayerPrefs.GetString("PlayerName2");
             }
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+       
     }
 
     // Update is called once per frame
