@@ -823,7 +823,7 @@ SpriteRenderer:
   m_Size: {x: 0.35, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &209330494
@@ -1609,7 +1609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e356799fb6f37477f97dc3e01c7bdae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
 --- !u!64 &357290278
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3138,7 +3137,7 @@ SpriteRenderer:
   m_Size: {x: 0.19, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1112977672
@@ -5686,8 +5685,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
