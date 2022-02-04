@@ -8,7 +8,7 @@ public class g1_time : MonoBehaviour
     [SerializeField] float setTime = 60.0f;
     [SerializeField] Text countdownText;
 
-    //GameObject popup = GameObject.Find("Panel");
+    GameObject popup = GameObject.Find("Panel");
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +25,11 @@ public class g1_time : MonoBehaviour
             Time.timeScale = 0.0f;
 
         countdownText.text = Mathf.Round(setTime).ToString();
-        
-        //// 시간이 소진되면 팝업창
-        //if (gm.time <= 0)
-        //{
-        //    Time.timeScale = 0f;
-        //    popup.SetActive(true);
-        //}
+
+        // 시간이 소진되면 팝업창
+        if (setTime <= 0)
+        {
+            popup.SetActive(true);
+        }
     }
 }
