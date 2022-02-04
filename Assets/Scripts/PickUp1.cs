@@ -54,7 +54,7 @@ public class PickUp1 : MonoBehaviour
                 else if (collision.tag.Equals("player2"))
                 {
                     Inventory2 inven = collision.GetComponent<Inventory2>();
-                    for (int i = 0; i < inven.slots.Count; i++)
+                    for (int i = inven.slots.Count-1; i >= 0; i--)
                     {
                         if (inven.slots[i].isEmpty)
                         {
