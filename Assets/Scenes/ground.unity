@@ -415,7 +415,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 207.1, y: 18.909973}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258622218
 MonoBehaviour:
@@ -629,7 +629,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 166.3, y: 17.3}
-  m_SizeDelta: {x: 0, y: 25}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399277082
 MonoBehaviour:
@@ -1429,7 +1429,7 @@ Transform:
   - {fileID: 1837621236}
   - {fileID: 1566447942}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &626563917
 SpriteRenderer:
@@ -2976,7 +2976,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233630296
 GameObject:
@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
-  slotPrefab2: {fileID: 9180495022252373487, guid: 46ffcb6d3189b3f4ba227f5566d72614, type: 3}
+  slotPrefab2: {fileID: 2900350404836726127, guid: b0613f345de9eea40a5d166377a8c1c0, type: 3}
 --- !u!114 &1464482387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3528,15 +3528,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464482385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-
-  m_LocalPosition: {x: 13.85, y: -0.08, z: 0}
-
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1778606243}
   - {fileID: 710445174}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1539714556
 GameObject:
@@ -6769,13 +6767,12 @@ Transform:
   m_GameObject: {fileID: 1831685702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: -1.9317966, z: 0}
-
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2101440426}
   - {fileID: 1888903783}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1831685709
 MonoBehaviour:
@@ -6790,7 +6787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
-  slotPrefab: {fileID: 891620935785815118, guid: c626bd38294cf714f82dccb00aecc2d5, type: 3}
+  slotPrefab: {fileID: 5004115824270978739, guid: c09a1d252de42084c985f947f727d6ac, type: 3}
 --- !u!1 &1837621235
 GameObject:
   m_ObjectHideFlags: 0
