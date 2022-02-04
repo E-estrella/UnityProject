@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
         //timeText.text = Mathf.Ceil(time).ToString();
 
-        // 시간이 소진되면 팝업창
+        // ?????? ???????? ??????
         //if (time <= 0)
         //{
         //    Time.timeScale = 0f;
