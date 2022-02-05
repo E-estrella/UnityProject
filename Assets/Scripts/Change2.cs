@@ -9,6 +9,5 @@ public class Change2 : MonoBehaviour
     public void SceneChange()
     {
         SceneManager.LoadScene("ground2");
-        //allowSceneActivation
     }
 }
