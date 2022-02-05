@@ -81,6 +81,8 @@ public class PickUp1 : MonoBehaviour
                         }
                         Count2++;
                     }
+                    Debug.Log(Count2);
+                    //GameObject.Find("player2_outter").GetComponent<Score>().Plus();
                 }
                 Destroy(this.gameObject);
             }
