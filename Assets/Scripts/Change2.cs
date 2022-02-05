@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Change2 : MonoBehaviour
 {
-    // Scenes 전환을 위한 코드
+    //Scenes 전환을 위한 코드
     public void SceneChange()
     {
         SceneManager.LoadScene("ground2");
