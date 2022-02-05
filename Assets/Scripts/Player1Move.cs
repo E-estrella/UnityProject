@@ -26,15 +26,15 @@ public class Player1Move : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             anim.SetBool("IdleToRun1", true);
-            transform.localScale = new Vector2(-1, 1);
-            myRigid.AddForce(new Vector2(10, 0));
+            transform.localScale = new Vector3(-1, 1, 0);
+            myRigid.AddForce(new Vector3(10, 0, 0));
         }
 
         else if (Input.GetKey(KeyCode.A))
         {
             anim.SetBool("IdleToRun1", true);
-            transform.localScale = new Vector2(1, 1);
-            myRigid.AddForce(new Vector2(-10, 0));
+            transform.localScale = new Vector3(1, 1, 0);
+            myRigid.AddForce(new Vector3(-10, 0, 0));
         }
 
         else anim.SetBool("IdleToRun1", false);
@@ -42,16 +42,16 @@ public class Player1Move : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             anim.SetBool("moving1", true);
-            transform.localScale = new Vector2(1, 1);
-            myRigid.AddForce(new Vector2(0, 10));
+            transform.localScale = new Vector3(1, 1, 0);
+            myRigid.AddForce(new Vector3(0, 10, 0));
         }
 
         else if (Input.GetKey(KeyCode.S))
         {
 
             anim.SetBool("moving1", true);
-            transform.localScale = new Vector2(1, 1);
-            myRigid.AddForce(new Vector2(0, -10));
+            transform.localScale = new Vector3(1, 1, 0);
+            myRigid.AddForce(new Vector3(0, -10, 0));
 
         }
 
