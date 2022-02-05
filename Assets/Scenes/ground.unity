@@ -160,8 +160,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &97017942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -290,8 +292,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &168785841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -506,8 +510,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &326770135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -722,8 +728,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &404554323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -852,8 +860,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &460344734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1054,8 +1064,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &555135520
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1395,7 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5042ca5640ea0f42bb295abbeac0105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setTime: 30
+  setTime: 2
   countdownText: {fileID: 1018037498}
 --- !u!1 &626563914
 GameObject:
@@ -1610,8 +1622,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &672695097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2057,8 +2071,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &841317639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6551,8 +6567,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &1821042366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6678,7 +6696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d95d2047395c3d42b88d050838d8ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Count1: 0
 --- !u!114 &1831685704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16589,8 +16606,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &1855910880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16719,8 +16738,10 @@ MonoBehaviour:
   slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
   Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
   Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
-  count: 0
-  Count: 0
+  plus1: 0
+  plus2: 0
+  Count1: 0
+  Count2: 0
 --- !u!61 &1884591844
 BoxCollider2D:
   m_ObjectHideFlags: 0
