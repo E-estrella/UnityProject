@@ -12983,6 +12983,7 @@ GameObject:
   - component: {fileID: 1943801970}
   - component: {fileID: 1943801974}
   - component: {fileID: 1943801973}
+  - component: {fileID: 1943801975}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -13105,3 +13106,15 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[{"name":"SpeedX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"SpeedY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &1943801975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943801969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e68029a618efc48a213cd62fe13c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
