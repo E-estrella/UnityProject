@@ -49,13 +49,14 @@ public class PickUp1 : MonoBehaviour
                             inven1.slots[i].isEmpty = false;
                             plus++;
                             Debug.Log(plus);
+                            if (plus == 1)
+                            {
+                                Count++;
+                            }
                             Destroy(this.gameObject);
                             break;
                         }
-                        if (plus == 1)
-                        {
-                            Count++;
-                        }
+                        Count++;
                     }
 
                     //Count = count++;
