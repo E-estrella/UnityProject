@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5042ca5640ea0f42bb295abbeac0105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setTime: 2
+  setTime: 60
   countdownText: {fileID: 1018037498}
 --- !u!1 &626563914
 GameObject:
@@ -1779,7 +1779,7 @@ RectTransform:
   m_GameObject: {fileID: 710445170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.015, y: 0.015, z: 0}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 1}
   m_Children:
   - {fileID: 1539714557}
   m_Father: {fileID: 1464482391}
@@ -3528,7 +3528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464482385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1778606243}
@@ -16865,7 +16865,7 @@ RectTransform:
   m_GameObject: {fileID: 1888903779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.015, y: 0.015, z: 0}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 1}
   m_Children:
   - {fileID: 1233630297}
   m_Father: {fileID: 1831685708}
