@@ -7,13 +7,13 @@ public class Bricks : MonoBehaviour
 {
     public GameObject go;
     public Tilemap tilemap;
-    GridLayout GridLayout;
+    GridLayout gridLayout;
   
     // Start is called before the first frame update
     void Start()
     {
         tilemap = GetComponent<Tilemap>();
-        //GridLayout = transform.parent.GetComponentInParent<GridLayout>();
+        gridLayout = transform.parent.GetComponentInParent<GridLayout>();
     }
 
 
