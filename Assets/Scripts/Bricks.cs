@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class Bricks : MonoBehaviour
-{
-    public GameObject go;
-    public Tilemap tilemap;
+{ 
+    Tilemap tilemap;
     GridLayout gridLayout;
     Vector3Int cellPosition;
+
+  
+    
   
     // Start is called before the first frame update
     void Start()
@@ -24,13 +26,14 @@ public class Bricks : MonoBehaviour
     {
         this.tilemap.RefreshAllTiles();
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
+    }
 
-        if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
-        {
-            tilemap.SetTileFlags(cellPosition, TileFlags.None); //???? ?? ??????
-            tilemap.SetColor(cellPosition, (Color.red)); //??????
+        //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
+        //{
+          //  tilemap.SetTileFlags(cellPosition, TileFlags.None); //???? ?? ??????
+            //tilemap.SetColor(cellPosition, (Color.red)); //??????
 
-        }
+        //}
           
             
 
@@ -41,13 +44,26 @@ public class Bricks : MonoBehaviour
         //}
             
 
-    }
+  //  }
    
 
     // Update is called once per frame
     void Update()
     {
-       
+
+        Vector2 point = transform.position;
+        cellPosition = gridLayout.WorldToCell(point);
+
+
+        if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
+        {
+        tilemap.SetTileFlags(cellPosition, TileFlags.None); //???? ?? ??????
+        tilemap.SetColor(cellPosition, (Color.red)); //??????
+
+        }
+
+
+
         //if (Input.GetKey("left shift"))
         //sr.material.color = Color.red; //??????
 
