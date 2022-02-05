@@ -16,9 +16,6 @@ public class Bricks : MonoBehaviour
         gridLayout = transform.parent.GetComponentInParent<GridLayout>();
     }
 
-
-   
-
     public void MakeColor (Vector3 Pos)
     {
         this.tilemap.RefreshAllTiles();

@@ -11,8 +11,8 @@ public class PickUp1 : MonoBehaviour
     //오디오 클립
     public AudioClip Boom;
     public AudioClip Get;
-    public int plus;
-    public int Count;
+    public int plus1, plus2;
+    public int Count1, Count2;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //오디오 클립
@@ -47,20 +47,18 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem, inven1.slots[i].slotObj.transform, false);
                             inven1.slots[i].isEmpty = false;
-                            plus++;
-                            Debug.Log(plus);
-                            if (plus == 1)
+                            plus1++;
+                            if (plus1 == 1)
                             {
-                                Count++;
+                                Count1++;
                             }
                             Destroy(this.gameObject);
                             break;
                         }
-                        Count++;
+                        Count1++;
                     }
-
-                    //Count = count++;
-                    Debug.Log(Count);
+                    Debug.Log(Count1);
+                    GameObject.Find("player1_outter").GetComponent<Score>().Plus();
                 }
 
 
@@ -73,10 +71,15 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem2, inven.slots[i].slotObj2.transform, false);
                             inven.slots[i].isEmpty = false;
+                            plus2++;
+                            if(plus2 == 1)
+                            {
+                                Count2++;
+                            }
                             Destroy(this.gameObject);
                             break;
                         }
-
+                        Count2++;
                     }
                 }
                 Destroy(this.gameObject);
