@@ -16,11 +16,11 @@ public class PickUp1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //오디오 클립
-        
 
-        if (collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
+
+        if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
-            
+
             // 0부터 9(10-1) 까지 값중에 하나를 랜덤으로 가져와서
             int randValue = UnityEngine.Random.Range(0, 10);
             if (randValue < 5)
@@ -43,7 +43,7 @@ public class PickUp1 : MonoBehaviour
                     Inventory1 inven1 = collision.GetComponent<Inventory1>();
                     for (int i = 0; i < inven1.slots.Count; i++)
                     {
-                        if(inven1.slots[i].isEmpty)
+                        if (inven1.slots[i].isEmpty)
                         {
                             Instantiate(slotItem, inven1.slots[i].slotObj.transform, false);
                             inven1.slots[i].isEmpty = false;
@@ -57,16 +57,16 @@ public class PickUp1 : MonoBehaviour
                             Count++;
                         }
                     }
-                    
+
                     //Count = count++;
                     Debug.Log(Count);
                 }
-                
+
 
                 else if (collision.tag.Equals("player2"))
                 {
                     Inventory2 inven = collision.GetComponent<Inventory2>();
-                    for (int i = inven.slots.Count-1; i >= 0; i--)
+                    for (int i = inven.slots.Count - 1; i >= 0; i--)
                     {
                         if (inven.slots[i].isEmpty)
                         {
