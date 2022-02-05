@@ -11,14 +11,16 @@ public class PickUp1 : MonoBehaviour
     //오디오 클립
     public AudioClip Boom;
     public AudioClip Get;
+    public int plus;
+    public int Count;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //오디오 클립
-        
 
-        if (collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
+
+        if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
-            
+
             // 0부터 9(10-1) 까지 값중에 하나를 랜덤으로 가져와서
             int randValue = UnityEngine.Random.Range(0, 10);
             if (randValue < 5)
@@ -38,23 +40,33 @@ public class PickUp1 : MonoBehaviour
                 AudioSource.PlayClipAtPoint(Get, transform.position);
                 if (collision.tag.Equals("player1"))
                 {
-                    Inventory1 inven = collision.GetComponent<Inventory1>();
-                    for (int i = 0; i < inven.slots.Count; i++)
+                    Inventory1 inven1 = collision.GetComponent<Inventory1>();
+                    for (int i = 0; i < inven1.slots.Count; i++)
                     {
-                        if(inven.slots[i].isEmpty)
+                        if (inven1.slots[i].isEmpty)
                         {
-                            Instantiate(slotItem, inven.slots[i].slotObj.transform, false);
-                            inven.slots[i].isEmpty = false;
+                            Instantiate(slotItem, inven1.slots[i].slotObj.transform, false);
+                            inven1.slots[i].isEmpty = false;
+                            plus++;
+                            Debug.Log(plus);
                             Destroy(this.gameObject);
                             break;
                         }
-
+                        if (plus == 1)
+                        {
+                            Count++;
+                        }
                     }
+
+                    //Count = count++;
+                    Debug.Log(Count);
                 }
+
+
                 else if (collision.tag.Equals("player2"))
                 {
                     Inventory2 inven = collision.GetComponent<Inventory2>();
-                    for (int i = inven.slots.Count-1; i >= 0; i--)
+                    for (int i = inven.slots.Count - 1; i >= 0; i--)
                     {
                         if (inven.slots[i].isEmpty)
                         {
@@ -70,9 +82,5 @@ public class PickUp1 : MonoBehaviour
             }
             //Destroy(this.gameObject);     
         }
-            
-
-     
     }
-    
 }
