@@ -27,7 +27,6 @@ public class g1_time : MonoBehaviour
 
         else if (setTime <= 0)
         {
-            Time.timeScale = 0.0f;
             next.SetActive(true);
         }
         countdownText.text = Mathf.Round(setTime).ToString();
