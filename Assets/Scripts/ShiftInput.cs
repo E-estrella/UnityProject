@@ -23,7 +23,7 @@ public class ShiftInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W & KeyCode.A & KeyCode.S & KeyCode.D))
+        if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         {
             print("е╟ют╥б");
 

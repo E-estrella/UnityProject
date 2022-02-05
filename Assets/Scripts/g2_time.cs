@@ -11,19 +11,12 @@ public class g2_time : MonoBehaviour
     [SerializeField]
     Text timerText;
 
-    //GameObject popup = GameObject.Find("Panel");
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (setTime > 0)
             setTime -= Time.deltaTime;
+
         else if (setTime <= 0)
             Time.timeScale = 0.0f;
 

@@ -15,7 +15,6 @@ public class PlayerManager : MonoBehaviour
         if (nm != null)
 
         {
-            // GameName�� �ִ� ���� �ҷ����
             GameName gamename = nm.GetComponent<GameName>();
             if (gamename != null)
             {
@@ -29,11 +28,5 @@ public class PlayerManager : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
