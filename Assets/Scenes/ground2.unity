@@ -226,6 +226,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7921569
       objectReference: {fileID: 0}
+    - target: {fileID: 212074183272344212, guid: 6877fb649746c674d8fbbcf60d41892b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 212321163342673234, guid: 6877fb649746c674d8fbbcf60d41892b, type: 3}
       propertyPath: m_Color.b
       value: 0.40784314
@@ -10204,7 +10208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b655dc825a61f54d9c8e635bc7f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 90
+  whatisPlatform:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &388788917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10212,7 +10219,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388788911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a7037635c45eff4297fbee6f85d5245, type: 3}
   m_Name: 
@@ -10234,6 +10241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots: []
   slotPrefab: {fileID: 891620935785815118, guid: c626bd38294cf714f82dccb00aecc2d5, type: 3}
+  Count1: 0
 --- !u!1 &429625930
 GameObject:
   m_ObjectHideFlags: 0
@@ -12307,7 +12315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639c18814d0eade4abc1e9aa8e0fcc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 90
 --- !u!1 &1046304453
 GameObject:
   m_ObjectHideFlags: 0
@@ -12651,6 +12659,10 @@ PrefabInstance:
     - target: {fileID: 212074183272344212, guid: 6877fb649746c674d8fbbcf60d41892b, type: 3}
       propertyPath: m_Color.r
       value: 0.21960784
+      objectReference: {fileID: 0}
+    - target: {fileID: 212074183272344212, guid: 6877fb649746c674d8fbbcf60d41892b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 212321163342673234, guid: 6877fb649746c674d8fbbcf60d41892b, type: 3}
       propertyPath: m_Color.b
