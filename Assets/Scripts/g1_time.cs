@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class g1_time : MonoBehaviour
 {
-    [SerializeField] float setTime = 60.0f;
-    [SerializeField] Text countdownText;
+    public float setTime = 60.0f;
+    public Text countdownText;
 
     GameObject next;
 
