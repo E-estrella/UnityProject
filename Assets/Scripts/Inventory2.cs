@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Inventory2 : MonoBehaviour
 {
-    // 플레이어 포션1 저장
-    //private void Awake()
-    //{
-    //    DontDestroyOnLoad(gameObject);
-    //}
-
     public List<SlotData2> slots = new List<SlotData2>();
     private int maxSlot = 11;
     public GameObject slotPrefab2;
