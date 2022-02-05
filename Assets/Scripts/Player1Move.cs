@@ -60,7 +60,35 @@ public class Player1Move : MonoBehaviour
 }
 
 
-    // 키보드 입력값을 받음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+// 키보드 입력값을 받음
     /*private Vector2 GetInput()
     {
         Vector2 moveVector;
@@ -70,19 +98,6 @@ public class Player1Move : MonoBehaviour
         Vector2 direction = moveVector;
         return direction;
     }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Transform player1;
 //Vector2 playerPosition;
