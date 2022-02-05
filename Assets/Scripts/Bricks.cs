@@ -7,22 +7,39 @@ public class Bricks : MonoBehaviour
 {
     public GameObject go;
     public Tilemap tilemap;
-    SpriteRenderer sr;
+    GridLayout GridLayout;
+  
     // Start is called before the first frame update
     void Start()
     {
         tilemap = GetComponent<Tilemap>();
+        //GridLayout = transform.parent.GetComponentInParent<GridLayout>();
     }
+
+
+   
 
     public void MakeColor (Vector3 Pos)
     {
-        //Vector3Int cellPosition = tilemap.WorldToCell(Pos);
+        this.tilemap.RefreshAllTiles();
+        Vector3Int cellPosition = tilemap.WorldToCell(Pos);
+        
 
-        if (Input.GetKey(KeyCode.W & KeyCode.A & KeyCode.S & KeyCode.D))
-            sr.material.color = Color.red; //빨간색
+        //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
+        //{
+            tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
+            tilemap.SetColor(cellPosition, (Color.red)); //빨간색
 
-        if (Input.GetKey(KeyCode.RightArrow & KeyCode.LeftArrow & KeyCode.UpArrow & KeyCode.DownArrow))
-            sr.material.color = Color.blue; //파란색 색칠
+        //}
+            
+            
+
+        //if (Input.GetKey(KeyCode.RightArrow | KeyCode.LeftArrow | KeyCode.UpArrow | KeyCode.DownArrow))
+        //{
+        //    this.tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
+        //    this.tilemap.SetColor(cellPosition, (Color.blue)); //파란색 색칠
+        //}
+            
 
     }
    
