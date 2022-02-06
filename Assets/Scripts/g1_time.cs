@@ -28,9 +28,9 @@ public class g1_time : MonoBehaviour
 
         else if (setTime <= 0)
         {
-            
             next.SetActive(true);
-            AudioSource.PlayClipAtPoint(timesup, transform.position); //¿Àµð¿À ÇÒ´ç
+            AudioSource.PlayClipAtPoint(timesup, transform.position); // 오디오할당
+            
         }
         countdownText.text = Mathf.Round(setTime).ToString();
     }
