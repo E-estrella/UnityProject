@@ -28,10 +28,11 @@ public class Stop : MonoBehaviour
         }
     }
 
+    
 
 
 
-
+<<<<<<< HEAD
     void Update()
     {
 
@@ -51,6 +52,11 @@ public class Stop : MonoBehaviour
            }
         }
 
+=======
+
+
+    
+>>>>>>> parent of e2f7d80 (최종)
 
     }
 }
