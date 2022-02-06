@@ -18,6 +18,9 @@ public class Monster : MonoBehaviour
     Score p2score = p2Score.GetComponent<Score>();
 
     Inventory3 inven3 = GetComponent<Inventory3>();
+
+
+
     int i;
     //for (i = 0; i < p1score; i++)
     //{
@@ -25,7 +28,7 @@ public class Monster : MonoBehaviour
     //    {
     //        Instantiate(slotItem, inven3.slots[i].slotObj3.transform, false);
     //        inven3.slots[i].isEmpty = false;
-    //        Destroy(this.gameObject);
+    //        //Destroy(this.gameObject);
     //        break;
     //    }
     //}
