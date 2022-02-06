@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Player1Score++;
+            Debug.Log(Player1Score);
         }
     }
 
