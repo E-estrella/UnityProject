@@ -8,6 +8,7 @@ public class Bricks1 : MonoBehaviour
     public GameObject go;
     public Tilemap tilemap;
     GridLayout gridLayout;
+    //public int tile1;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,6 @@ public class Bricks1 : MonoBehaviour
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
         tilemap.SetColor(cellPosition, (Color.red));//빨간색
                                                     //}
-
     }
 }
 
