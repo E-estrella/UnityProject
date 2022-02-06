@@ -77,7 +77,6 @@ public class Bricks1 : MonoBehaviour
             player1.SetActive(true);
         }
         Player1ScoreUI.text = " X " + Player1Score;
-        print("여기다");
 
     }
 
