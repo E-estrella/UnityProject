@@ -27,5 +27,7 @@ public class Bricks1 : MonoBehaviour
                                                     //}
 
     }
+    
+    
 }
 
