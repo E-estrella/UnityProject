@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class g1_time : MonoBehaviour
 {
-    public float setTime = 60.0f;
+    public float setTime;
     public Text countdownText;
 
     GameObject next;

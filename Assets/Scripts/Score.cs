@@ -30,14 +30,9 @@ public class Score : MonoBehaviour
 
     public void Plus()
     {
-        g1_time time = GameObject.Find("Main Camera").GetComponent<g1_time>();
-        if(time.setTime <= 0)
-        {
-            PickUp1 p1 = GameObject.Find("Treasure2").GetComponent<PickUp1>();
-            Count1 = p1.Count1;
-            Debug.Log(1);
-            print(1);
-            Debug.Log(Count1);
-        }
+        PickUp1 p1 = GameObject.Find("Treasure2").GetComponent<PickUp1>();
+        Count1 = p1.Count1;
+        Debug.Log(10);
+        Debug.Log(Count1);
     }
 }

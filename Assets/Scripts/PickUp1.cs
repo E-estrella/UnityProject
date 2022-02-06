@@ -41,7 +41,8 @@ public class PickUp1 : MonoBehaviour
                 if (collision.tag.Equals("player1"))
                 {
                     Inventory1 inven1 = collision.GetComponent<Inventory1>();
-                    for (int i = 0; i < inven1.slots.Count; i++)
+                    int i;
+                    for (i = 0; i < inven1.slots.Count; i++)
                     {
                         if (inven1.slots[i].isEmpty)
                         {
@@ -58,9 +59,12 @@ public class PickUp1 : MonoBehaviour
                         Count1++;
                     }
                     Debug.Log(Count1);
+                }
+                g1_time time = GameObject.Find("Main Camera").GetComponent<g1_time>();
+                if (time.setTime <= 0)
+                {
                     GameObject.Find("player1_outter").GetComponent<Score>().Plus();
                 }
-
 
                 else if (collision.tag.Equals("player2"))
                 {
