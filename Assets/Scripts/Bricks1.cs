@@ -22,7 +22,6 @@ public class Bricks1 : MonoBehaviour
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
 
 
-
         //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         //{
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기

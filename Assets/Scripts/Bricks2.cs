@@ -22,6 +22,5 @@ public class Bricks2 : MonoBehaviour
 
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //?? ? ???
         tilemap.SetColor(cellPosition, (Color.clear)); //???? ?? ? ????
-
     }
 }
