@@ -10,7 +10,7 @@ public class portion1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject p1 = GameObject.Find("ScoreManagement");
+        GameObject p1 = GameObject.Find("ScoreManager");
         Score P1 = p1.GetComponent<Score>();
         Player1 = P1.Player1Score;
     }
@@ -19,7 +19,7 @@ public class portion1 : MonoBehaviour
     void Update()
     {
         Inventory3 inven3 = GetComponent<Inventory3>();
-        for(int i=0;i<inven3.slots.Count;i++)
+        for(int i = 0; i < Player1; i++)
         {
             Instantiate(slotItem, inven3.slots[i].slotObj3.transform, false);
             inven3.slots[i].isEmpty = false;

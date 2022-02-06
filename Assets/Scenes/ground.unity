@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5042ca5640ea0f42bb295abbeac0105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setTime: 10
+  setTime: 60
   countdownText: {fileID: 1018037498}
   timesup: {fileID: 8300000, guid: 242fa02f88aa7914f8f16f152836c02a, type: 3}
 --- !u!1 &626563914
@@ -3530,7 +3530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639c18814d0eade4abc1e9aa8e0fcc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 90
+  moveSpeed: 200
 --- !u!212 &1464482388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6947,7 +6947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b655dc825a61f54d9c8e635bc7f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 90
+  moveSpeed: 200
 --- !u!212 &1831685705
 SpriteRenderer:
   m_ObjectHideFlags: 0
