@@ -8,7 +8,11 @@ TagManager:
   - player1
   - player2
   - PickUp
+<<<<<<< Updated upstream
   - tile
+=======
+  - Monster
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
