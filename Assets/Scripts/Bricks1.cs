@@ -24,9 +24,9 @@ public class Bricks1 : MonoBehaviour
 
         //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         //{
-        tilemap.SetTileFlags(cellPosition, TileFlags.None); //Å¸ÀÏ »ö ¹Ù²Ù±â
-        tilemap.SetColor(cellPosition, (Color.red)); //»¡°£»ö
+        tilemap.SetTileFlags(cellPosition, TileFlags.None); //íƒ€ì¼ ìƒ‰ ë°”ê¾¸ê¸°
+        tilemap.SetColor(cellPosition, (Color.red));//ë¹¨ê°„ìƒ‰
+                                                    //}
 
-        //}
     }
 }
