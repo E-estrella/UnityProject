@@ -5,32 +5,22 @@ using UnityEngine.UI;
 
 public class ScoreManager1 : MonoBehaviour
 {
-    public Text Player1ScoreUI;
-    public Text Player2ScoreUI;
-
-    public int Player1Score;
-    public int Player2Score;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
+
+    public Text Player1ScoreUI;
+    public int Player1Score = 0;
 
     // 보물 상자를 열 때마다 점수 표시
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Pick Up"))
+        if (collision.gameObject.CompareTag("PickUp"))
         {
-            other.gameObject.SetActive(false);
             Player1Score++;
-            Debug.Log(Player1Score);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(Player1Score);
+        Player1ScoreUI.text = " X " + Player1Score;
     }
 }
