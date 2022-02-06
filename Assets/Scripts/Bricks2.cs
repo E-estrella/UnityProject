@@ -41,6 +41,6 @@ public class Bricks2 : MonoBehaviour
             }
         }
 
-        print("num clear: " + numRed);
+        //print("num clear: " + numRed);
     }
 }

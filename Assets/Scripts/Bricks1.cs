@@ -46,7 +46,7 @@ public class Bricks1 : MonoBehaviour
             }
         }
 
-        print("num red: " + numRed);
+        //print("num red: " + numRed);
     }
     
     

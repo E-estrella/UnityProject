@@ -10529,7 +10529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
-  slotPrefab3: {fileID: 8784248446625038751, guid: 544ded62aaa70d245b8f2f2344234b03, type: 3}
+  slotPrefab3: {fileID: 7311089189102476781, guid: 544ded62aaa70d245b8f2f2344234b03, type: 3}
 --- !u!1 &397476083
 GameObject:
   m_ObjectHideFlags: 0
@@ -13114,7 +13114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
-  slotPrefab4: {fileID: 5669025838216440930, guid: 46ffcb6d3189b3f4ba227f5566d72614, type: 3}
+  slotPrefab4: {fileID: 5279681605885447525, guid: 46ffcb6d3189b3f4ba227f5566d72614, type: 3}
 --- !u!1 &1013236685
 GameObject:
   m_ObjectHideFlags: 0
