@@ -48,11 +48,9 @@ public class Player1Move : MonoBehaviour
 
         else if (Input.GetKey(KeyCode.S))
         {
-
             anim.SetBool("moving1", true);
             transform.localScale = new Vector3(1, 1, 0);
             myRigid.AddForce(new Vector3(0, -10, 0));
-
         }
 
         else anim.SetBool("moving1", false);
