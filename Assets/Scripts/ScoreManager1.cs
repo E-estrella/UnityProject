@@ -5,11 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreManager1 : MonoBehaviour
 {
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     public Text Player1ScoreUI;
     public int Player1Score = 0;
 

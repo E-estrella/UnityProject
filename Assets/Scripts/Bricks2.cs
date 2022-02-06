@@ -19,7 +19,6 @@ public class Bricks2 : MonoBehaviour
     public void MakeColor(Vector3 Pos)
     {
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
-
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //?? ? ???
         tilemap.SetColor(cellPosition, (Color.clear)); //???? ?? ? ????
     }

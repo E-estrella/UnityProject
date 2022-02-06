@@ -20,8 +20,6 @@ public class Bricks1 : MonoBehaviour
     {
         //this.tilemap.RefreshAllTiles();
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
-
-
         //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         //{
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
@@ -30,3 +28,4 @@ public class Bricks1 : MonoBehaviour
 
     }
 }
+
