@@ -20,9 +20,6 @@ public class PickUp1 : MonoBehaviour
 
         if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
-
-            
-            
                 GameObject explosion = Instantiate(explosionFactory2);
                 explosion.transform.position = transform.position;
                 AudioSource.PlayClipAtPoint(Get, transform.position);
