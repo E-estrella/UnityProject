@@ -20,13 +20,12 @@ public class Bricks1 : MonoBehaviour
     {
         //this.tilemap.RefreshAllTiles();
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
-
-
         //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         //{
-        tilemap.SetTileFlags(cellPosition, TileFlags.None); //≈∏¿œ ªˆ πŸ≤Ÿ±‚
-        tilemap.SetColor(cellPosition, (Color.red)); //ª°∞£ªˆ
+        tilemap.SetTileFlags(cellPosition, TileFlags.None); //ÌÉÄÏùº ÏÉâ Î∞îÍæ∏Í∏∞
+        tilemap.SetColor(cellPosition, (Color.red));//Îπ®Í∞ÑÏÉâ
+                                                    //}
 
-        //}
     }
 }
+
