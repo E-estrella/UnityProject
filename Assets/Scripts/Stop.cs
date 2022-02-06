@@ -41,7 +41,7 @@ public class Stop : MonoBehaviour
        // }
     }
 
-    
+
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
@@ -55,25 +55,23 @@ public class Stop : MonoBehaviour
     {
 
 
-        if(!collgameObject)
-        {
-          Timer += Time.deltaTime;
+        //if(!collgameObject)
+        //{
+        //  Timer += Time.deltaTime;
 
 
-          if(Timer <= 3.0f)
-           {
-             Monster.gameObject.SetActive(true);
-             collgameObject = true;
+        //  if(Timer <= 3.0f)
+        //  {
+        //     Monster.gameObject.SetActive(true);
+        //     collgameObject = true;
 
 
-             Timer = 0.0f;
-           }
-        }
+        //     Timer = 0.0f;
+        //  }
+        //}
 
-
-
-    void Update()
-    {
-         
     }
+
+
+    
 }
