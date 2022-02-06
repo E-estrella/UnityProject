@@ -10337,14 +10337,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388788911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b58f482752a3d974ab56325c08302d26, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a39a1d868ae8c845908bc496568c969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
-  slotPrefab: {fileID: 891620935785815118, guid: c626bd38294cf714f82dccb00aecc2d5, type: 3}
-  Count1: 0
+  slotPrefab3: {fileID: 8784248446625038751, guid: 544ded62aaa70d245b8f2f2344234b03, type: 3}
 --- !u!1 &397476083
 GameObject:
   m_ObjectHideFlags: 0
@@ -12661,6 +12660,7 @@ GameObject:
   - component: {fileID: 939857765}
   - component: {fileID: 939857763}
   - component: {fileID: 939857766}
+  - component: {fileID: 939857767}
   m_Layer: 6
   m_Name: player2_outter
   m_TagString: Untagged
@@ -12831,6 +12831,20 @@ MonoBehaviour:
   whatisPlatform:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &939857767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939857760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99f1d83141ef0e4b8e6c9281a2755d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+  slotPrefab4: {fileID: 5669025838216440930, guid: 46ffcb6d3189b3f4ba227f5566d72614, type: 3}
 --- !u!1 &1013236685
 GameObject:
   m_ObjectHideFlags: 0
