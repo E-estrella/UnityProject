@@ -11,8 +11,6 @@ public class PickUp1 : MonoBehaviour
     //오디오 클립
     //public AudioClip Boom;
     public AudioClip Get;
-    //public int plus1, plus2;
-    //public int Count1, Count2;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //오디오 클립
@@ -26,8 +24,7 @@ public class PickUp1 : MonoBehaviour
                 if (collision.tag.Equals("player1"))
                 {
                     Inventory1 inven1 = collision.GetComponent<Inventory1>();
-                    int i;
-                    for (i = 0; i < inven1.slots.Count; i++)
+                    for (int i = 0; i < inven1.slots.Count; i++)
                     {
                         if (inven1.slots[i].isEmpty)
                         {

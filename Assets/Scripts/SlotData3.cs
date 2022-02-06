@@ -7,5 +7,4 @@ public class SlotData3 : MonoBehaviour
 {
     public bool isEmpty;
     public GameObject slotObj3;
-   
 }
