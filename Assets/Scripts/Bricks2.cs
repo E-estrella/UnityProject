@@ -20,10 +20,8 @@ public class Bricks2 : MonoBehaviour
     {
         Vector3Int cellPosition = tilemap.WorldToCell(Pos);
 
-        tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
-        tilemap.SetColor(cellPosition, (Color.clear)); //흰색으로 타일 색 맞춰주기
-
-
+        tilemap.SetTileFlags(cellPosition, TileFlags.None); //?? ? ???
+        tilemap.SetColor(cellPosition, (Color.clear)); //???? ?? ? ????
 
     }
 }
