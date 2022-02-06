@@ -30,7 +30,7 @@ public class g1_time : MonoBehaviour
         {
             
             next.SetActive(true);
-            AudioSource.PlayClipAtPoint(timesup, transform.position); //¿Àµð¿À ÇÒ´ç
+            AudioSource.PlayClipAtPoint(timesup, transform.position); //Â¿Ã€ÂµÃ°Â¿Ã€ Ã‡Ã’Â´Ã§
         }
         countdownText.text = Mathf.Round(setTime).ToString();
     }
