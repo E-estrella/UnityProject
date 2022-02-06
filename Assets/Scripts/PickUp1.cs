@@ -11,8 +11,8 @@ public class PickUp1 : MonoBehaviour
     //오디오 클립
     public AudioClip Boom;
     public AudioClip Get;
-    public int plus1, plus2;
-    public int Count1, Count2;
+    //public int plus1, plus2;
+    //public int Count1, Count2;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //오디오 클립
@@ -48,23 +48,23 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem, inven1.slots[i].slotObj.transform, false);
                             inven1.slots[i].isEmpty = false;
-                            plus1++;
-                            if (plus1 == 1)
-                            {
-                                Count1++;
-                            }
+                            //plus1++;
+                            //if (plus1 == 1)
+                            //{
+                            //    Count1++;
+                            //}
                             Destroy(this.gameObject);
                             break;
                         }
-                        Count1++;
+                        //Count1++;
                     }
-                    Debug.Log(Count1);
+                    //Debug.Log(Count1);
                 }
-                g1_time time = GameObject.Find("Main Camera").GetComponent<g1_time>();
-                if (time.setTime <= 0)
-                {
-                    GameObject.Find("player1_outter").GetComponent<Score>().Plus();
-                }
+                //g1_time time = GameObject.Find("Main Camera").GetComponent<g1_time>();
+                //if (time.setTime <= 0)
+                //{
+                //    GameObject.Find("player1_outter").GetComponent<Score>().Plus();
+                //}
 
                 else if (collision.tag.Equals("player2"))
                 {
@@ -75,17 +75,17 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem2, inven.slots[i].slotObj2.transform, false);
                             inven.slots[i].isEmpty = false;
-                            plus2++;
-                            if(plus2 == 1)
-                            {
-                                Count2++;
-                            }
+                            //plus2++;
+                            //if(plus2 == 1)
+                            //{
+                            //    Count2++;
+                            //}
                             Destroy(this.gameObject);
                             break;
                         }
-                        Count2++;
+                        //Count2++;
                     }
-                    Debug.Log(Count2);
+                    //Debug.Log(Count2);
                     //GameObject.Find("player2_outter").GetComponent<Score>().Plus();
                 }
                 Destroy(this.gameObject);
