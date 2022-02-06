@@ -62,7 +62,7 @@ public class Bricks1 : MonoBehaviour
             }
             if (settime.setTime <= 0)
             {
-                print("num clear: " + numRed);
+                //print("num clear: " + numRed);
 
                 Player1ScoreUI.text = " X " + Player1Score;
 
