@@ -14,6 +14,7 @@ public class g1_time : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         countdownText.text = setTime.ToString();
 
         next = GameObject.Find("Canvas").transform.Find("Panel").gameObject;
@@ -28,6 +29,7 @@ public class g1_time : MonoBehaviour
 
         else if (setTime <= 0)
         {
+            Time.timeScale = 0;
             next.SetActive(true);
             AudioSource.PlayClipAtPoint(timesup, transform.position); // 오디오할당
             

@@ -18,9 +18,6 @@ public class Monster : MonoBehaviour
     Score p2score = p2Score.GetComponent<Score>();
 
     Inventory3 inven3 = GetComponent<Inventory3>();
-
-
-
     int i;
     //for (i = 0; i < p1score; i++)
     //{
