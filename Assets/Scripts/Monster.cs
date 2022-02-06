@@ -21,17 +21,7 @@ public class Monster : MonoBehaviour
 
 
 
-    int i;
-    //for (i = 0; i < p1score; i++)
-    //{
-    //    if (inven3.slots[i].isEmpty)
-    //    {
-    //        Instantiate(slotItem, inven3.slots[i].slotObj3.transform, false);
-    //        inven3.slots[i].isEmpty = false;
-    //        //Destroy(this.gameObject);
-    //        break;
-    //    }
-    //}
+ 
 }
 
     // Update is called once per frame

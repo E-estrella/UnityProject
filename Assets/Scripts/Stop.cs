@@ -41,7 +41,7 @@ public class Stop : MonoBehaviour
        // }
     }
 
-    
+
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
@@ -50,9 +50,12 @@ public class Stop : MonoBehaviour
     //Monster.gameObject.SetActive(false);
     //}
 
+    //private void OnTriggerEnter(Collider2D collision)
+    //{
+    //    if()
+    //}
 
 
-    
 
     void Update()
     {
