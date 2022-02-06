@@ -33,24 +33,12 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem, inven1.slots[i].slotObj.transform, false);
                             inven1.slots[i].isEmpty = false;
-                            //plus1++;
-                            //if (plus1 == 1)
-                            //{
-                            //    Count1++;
-                            //}
                             Destroy(this.gameObject);
                             break;
                         }
-                        //Count1++;
                     }
-                    //Debug.Log(Count1);
                 }
-                //g1_time time = GameObject.Find("Main Camera").GetComponent<g1_time>();
-                //if (time.setTime <= 0)
-                //{
-                //    GameObject.Find("player1_outter").GetComponent<Score>().Plus();
-                //}
-
+                
                 else if (collision.tag.Equals("player2"))
                 {
                     Inventory2 inven = collision.GetComponent<Inventory2>();
@@ -60,22 +48,13 @@ public class PickUp1 : MonoBehaviour
                         {
                             Instantiate(slotItem2, inven.slots[i].slotObj2.transform, false);
                             inven.slots[i].isEmpty = false;
-                            //plus2++;
-                            //if(plus2 == 1)
-                            //{
-                            //    Count2++;
-                            //}
                             Destroy(this.gameObject);
                             break;
                         }
-                        //Count2++;
                     }
-                    //Debug.Log(Count2);
-                    //GameObject.Find("player2_outter").GetComponent<Score>().Plus();
                 }
                 Destroy(this.gameObject);
-            }
-            //Destroy(this.gameObject);     
+            }    
         }
     }
 
