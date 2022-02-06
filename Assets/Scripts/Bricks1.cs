@@ -26,6 +26,27 @@ public class Bricks1 : MonoBehaviour
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
         tilemap.SetColor(cellPosition, (Color.red));//빨간색
                                                     //}
+
+        // 컬러 계산
+        int numRed = 0;
+        Vector3Int mapPos = new Vector3Int();
+
+        for (int i = 0; i < tilemap.size.x; i++)
+        {
+            mapPos.x = tilemap.origin.x + i;
+
+            for (int j = 0; j < tilemap.size.y; j++)
+            {
+                mapPos.y = tilemap.origin.y + j;
+
+                if (tilemap.GetColor(mapPos) == Color.red)
+                {
+                    ++numRed;
+                }
+            }
+        }
+
+        print("num red: " + numRed);
     }
     
     

@@ -41,6 +41,8 @@ public class ThenumberofTile : MonoBehaviour
 
         colorObj1.GetComponent<Renderer>().material.color = color;
 
-        //tile1_count=colorObj1.Find
+
+        //tile1_count = colorObj1.Find;
+
     }
 }
