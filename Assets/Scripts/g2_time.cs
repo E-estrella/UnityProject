@@ -14,6 +14,7 @@ public class g2_time : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         countdownText.text = setTime.ToString();
 
         next = GameObject.Find("Canvas").transform.Find("Panel").gameObject;
