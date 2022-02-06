@@ -30,7 +30,7 @@ public class g2_time : MonoBehaviour
         {
             next.SetActive(true);
             //AudioSource.PlayClipAtPoint(timesup, transform.position); // 오디오할당
-
+            //next.transform.GetComponent<Bricks1>().CountColor();
         }
         countdownText.text = Mathf.Round(setTime).ToString();
     }

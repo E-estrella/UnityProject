@@ -27,5 +27,7 @@ public class Bricks1 : MonoBehaviour
         tilemap.SetColor(cellPosition, (Color.red));//빨간색
                                                     //}
     }
+    
+    
 }
 
