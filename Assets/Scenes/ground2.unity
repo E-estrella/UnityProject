@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 240417548}
   - component: {fileID: 240417550}
   - component: {fileID: 240417549}
+  - component: {fileID: 240417551}
   m_Layer: 7
   m_Name: Tilemap
   m_TagString: tile
@@ -10057,6 +10058,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go: {fileID: 0}
   tilemap: {fileID: 240417546}
+--- !u!114 &240417551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240417543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb045ced09ed9b40a319744e97b8b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorObj1: {fileID: 0}
+  tile1_count: 0
 --- !u!1 &252577152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10311,6 +10326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7037635c45eff4297fbee6f85d5245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
     m_Bits: 128
@@ -12811,6 +12827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb5ddb9966bf7243a3c3432670f4d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
     m_Bits: 128
@@ -13848,6 +13865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7037635c45eff4297fbee6f85d5245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
     m_Bits: 0
