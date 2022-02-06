@@ -1686,6 +1686,7 @@ GameObject:
   - component: {fileID: 357290280}
   - component: {fileID: 357290279}
   - component: {fileID: 357290278}
+  - component: {fileID: 357290277}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -1693,7 +1694,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-
 --- !u!114 &357290277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1703,9 +1703,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 357290276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e356799fb6f37477f97dc3e01c7bdae0, type: 3}
+  m_Script: {fileID: 11500000, guid: 07180280729e7492098bc2bbbfbb201b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!64 &357290278
 MeshCollider:
   m_ObjectHideFlags: 0
