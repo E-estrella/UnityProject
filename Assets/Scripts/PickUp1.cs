@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PickUp1 : MonoBehaviour
 {
-    public GameObject explosionFactory;
+    
     public GameObject explosionFactory2;
     public GameObject slotItem;
     public GameObject slotItem2;
     //오디오 클립
-    public AudioClip Boom;
+    //public AudioClip Boom;
     public AudioClip Get;
     //public int plus1, plus2;
     //public int Count1, Count2;
@@ -21,20 +21,8 @@ public class PickUp1 : MonoBehaviour
         if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
 
-            // 0부터 9(10-1) 까지 값중에 하나를 랜덤으로 가져와서
-            int randValue = UnityEngine.Random.Range(0, 10);
-            if (randValue < 5)
-            {
-                GameObject explosion = Instantiate(explosionFactory);
-                explosion.transform.position = transform.position;
-                //Destroy(this.gameObject);
-                //오디오 할당(꽝일 때)
-                AudioSource.PlayClipAtPoint(Boom, transform.position);
-                Destroy(this.gameObject);
-            }
-            // 그렇지 않으면
-            else
-            {
+            
+            
                 GameObject explosion = Instantiate(explosionFactory2);
                 explosion.transform.position = transform.position;
                 AudioSource.PlayClipAtPoint(Get, transform.position);
@@ -93,4 +81,4 @@ public class PickUp1 : MonoBehaviour
             //Destroy(this.gameObject);     
         }
     }
-}
+
