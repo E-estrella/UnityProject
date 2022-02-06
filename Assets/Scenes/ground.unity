@@ -1370,6 +1370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   setTime: 60
   countdownText: {fileID: 1018037498}
+  timesup: {fileID: 8300000, guid: 242fa02f88aa7914f8f16f152836c02a, type: 3}
 --- !u!1 &626563914
 GameObject:
   m_ObjectHideFlags: 0
