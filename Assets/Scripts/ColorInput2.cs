@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ColorInput2 : MonoBehaviour
 {
-    Vector3 PlayerPosition;
+    public Vector3 PlayerPosition;
     public LayerMask whatisPlatform;
 
     public void OnDrawGizmos()
@@ -24,7 +24,7 @@ public class ColorInput2 : MonoBehaviour
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if (overCollider2d != null)
             {
-                print("충돌!!");
+                //print("충돌!!");
 
                 overCollider2d.transform.GetComponent<Bricks2>().MakeColor(PlayerPosition);
             }
