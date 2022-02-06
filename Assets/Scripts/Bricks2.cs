@@ -68,7 +68,7 @@ public class Bricks2 : MonoBehaviour
         }
         print("num red: " + numRed);
         Debug.Log(Player2Score);
-        if (Player2Score < Player1score.Player1Score)
+        if (Player2Score > Player1score.Player1Score)
         {
             player2.SetActive(true);
         }
