@@ -2,15 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class g2_time : MonoBehaviour
 {
-    [SerializeField] float setTime = 180.0f;
-    [SerializeField] Text countdownText;
+    public float setTime;
+    public Text countdownText;
+    //public AudioClip timesup;
 
-    [SerializeField]
-    Text timerText;
+    GameObject next;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Time.timeScale = 1;
+        countdownText.text = setTime.ToString();
+
+        next = GameObject.Find("Canvas").transform.Find("Panel").gameObject;
+        next.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,8 +28,11 @@ public class g2_time : MonoBehaviour
             setTime -= Time.deltaTime;
 
         else if (setTime <= 0)
-            Time.timeScale = 0.0f;
-
+        {
+            next.SetActive(true);
+            //AudioSource.PlayClipAtPoint(timesup, transform.position); // 오디오할당
+            //next.transform.GetComponent<Bricks1>().CountColor();
+        }
         countdownText.text = Mathf.Round(setTime).ToString();
     }
 }

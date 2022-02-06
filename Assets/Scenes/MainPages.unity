@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07180280729e7492098bc2bbbfbb201b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.5
 --- !u!64 &357290278
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5713,7 +5713,7 @@ GameObject:
   - component: {fileID: 1856398369}
   - component: {fileID: 1856398368}
   m_Layer: 0
-  m_Name: KakaoTalk_Photo_2022-01-28-15-18-47
+  m_Name: title2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
