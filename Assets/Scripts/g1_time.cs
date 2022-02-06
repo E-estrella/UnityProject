@@ -7,6 +7,7 @@ public class g1_time : MonoBehaviour
 {
     public float setTime;
     public Text countdownText;
+    public AudioClip timesup;
 
     GameObject next;
 
@@ -27,7 +28,9 @@ public class g1_time : MonoBehaviour
 
         else if (setTime <= 0)
         {
+            
             next.SetActive(true);
+            AudioSource.PlayClipAtPoint(timesup, transform.position); //오디오 할당
         }
         countdownText.text = Mathf.Round(setTime).ToString();
     }
