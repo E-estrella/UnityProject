@@ -13,13 +13,6 @@ public class ColorInput1 : MonoBehaviour
         Gizmos.DrawSphere(PlayerPosition, 0.2f);
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +24,7 @@ public class ColorInput1 : MonoBehaviour
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if (overCollider2d != null)
             {
-                print("Ãæµ¹!!");
+                print("????!!");
 
                 overCollider2d.transform.GetComponent<Bricks1>().MakeColor(PlayerPosition);
             }
