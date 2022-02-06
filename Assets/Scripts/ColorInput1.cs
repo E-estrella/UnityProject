@@ -31,7 +31,7 @@ public class ColorInput1 : MonoBehaviour
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if (overCollider2d != null)
             {
-                print("Ãæµ¹!!");
+                print("????!!");
 
                 overCollider2d.transform.GetComponent<Bricks1>().MakeColor(PlayerPosition);
             }
