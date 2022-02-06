@@ -6,11 +6,13 @@ public class ColorInput2 : MonoBehaviour
 {
     public Vector3 PlayerPosition;
     public LayerMask whatisPlatform;
+    public g2_time settime;
 
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(PlayerPosition, 0.2f);
+        settime = GameObject.Find("Main Camera").GetComponent<g2_time>();
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class ColorInput2 : MonoBehaviour
     {
         PlayerPosition = transform.position;
 
-        //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
+        if (settime.setTime > 0)
         {
 
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
