@@ -12497,7 +12497,6 @@ GameObject:
   - component: {fileID: 939857765}
   - component: {fileID: 939857763}
   - component: {fileID: 939857766}
-  - component: {fileID: 939857769}
   - component: {fileID: 939857767}
   - component: {fileID: 939857768}
   m_Layer: 6
@@ -12684,11 +12683,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399d0cc3af9ec46f7a3e9f0b76d8c4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Monster: {fileID: 0}
---- !u!1 &942298372
-
- 
-
+  slots: []
+  slotPrefab4: {fileID: 5279681605885447525, guid: 46ffcb6d3189b3f4ba227f5566d72614, type: 3}
+--- !u!114 &939857768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939857760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e7dd943f8ca49409811396aef300b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2: 0
+  slotItem: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
+--- !u!1 &1013236685
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

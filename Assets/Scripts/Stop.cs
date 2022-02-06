@@ -29,21 +29,28 @@ public class Stop : MonoBehaviour
     }
 
 
+
+
+
     void Update()
     {
+
 
         if(!collgameObject)
         {
           Timer += Time.deltaTime;
 
-        if(Timer <= 3.0f)
-         {
-           Monster.gameObject.SetActive(true);
-           collgameObject = true;
 
-           Timer = 0.0f;
-          }
+          if(Timer <= 3.0f)
+           {
+             Monster.gameObject.SetActive(true);
+             collgameObject = true;
+
+
+             Timer = 0.0f;
+           }
         }
+
 
     }
 }
