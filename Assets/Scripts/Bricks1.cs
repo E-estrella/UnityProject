@@ -25,7 +25,7 @@ public class Bricks1 : MonoBehaviour
         //if (Input.GetKey(KeyCode.W | KeyCode.A | KeyCode.S | KeyCode.D))
         //{
         tilemap.SetTileFlags(cellPosition, TileFlags.None); //타일 색 바꾸기
-        tilemap.SetColor(cellPosition, (Color.red)); //빨간색
+        tilemap.SetColor(cellPosition, (Color.magenta)); //빨간색
 
         //}
 
