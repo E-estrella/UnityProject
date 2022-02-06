@@ -11,7 +11,7 @@ public class Inventory4 : MonoBehaviour
     void Start()
     {
         GameObject slotPanel4 = GameObject.Find("Panel2");
-        for (int i = 0; i < maxSlot; i++)
+        for (int i = maxSlot - 1; i >= 0; i--)
         {
             GameObject go = Instantiate(slotPrefab4, slotPanel4.transform, false);
             go.name = "Slot_" + i;

@@ -21,5 +21,4 @@ public class Inventory3 : MonoBehaviour
             slots.Add(slot);
         }
     }
-
 }

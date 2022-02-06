@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
         Player1Score = P1.Player1Score;
         Player2Score = P2.Player2Score;
 
-        Debug.Log(Player1Score);
-        Debug.Log(Player2Score);
+        //Debug.Log(Player1Score);
+        //Debug.Log(Player2Score);
     }
 }

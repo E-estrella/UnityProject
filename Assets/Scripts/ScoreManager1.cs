@@ -15,7 +15,7 @@ public class ScoreManager1 : MonoBehaviour
         {
             Player1Score++;
         }
-        Debug.Log(Player1Score);
+        //Debug.Log(Player1Score);
         Player1ScoreUI.text = " X " + Player1Score;
     }
 }
