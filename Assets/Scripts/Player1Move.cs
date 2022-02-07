@@ -12,10 +12,14 @@ public class Player1Move : MonoBehaviour
 
     public float moveSpeed;
 
+    GameObject playerObj;
+
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
+
+        playerObj = GameObject.Find("Player1");
 
         anim = GameObject.Find("Player1").GetComponent<Animator>();
     }
@@ -26,14 +30,16 @@ public class Player1Move : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             anim.SetBool("IdleToRun1", true);
-            transform.localScale = new Vector3(-1, 1, 0);
+            //transform.localScale = new Vector3(-1, 1, 0);
+            playerObj.transform.localScale = new Vector3(-1, 1, 0);
             myRigid.AddForce(new Vector3(10, 0, 0));
         }
 
         else if (Input.GetKey(KeyCode.A))
         {
             anim.SetBool("IdleToRun1", true);
-            transform.localScale = new Vector3(1, 1, 0);
+            //transform.localScale = new Vector3(1, 1, 0);
+            playerObj.transform.localScale = new Vector3(1, 1, 0);
             myRigid.AddForce(new Vector3(-10, 0, 0));
         }
 
