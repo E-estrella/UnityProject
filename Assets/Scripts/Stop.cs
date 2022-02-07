@@ -6,7 +6,7 @@ public class Stop : MonoBehaviour
 {
    
    public GameObject Monster;
-    bool collgameObject = true;
+    bool collgameObject = false;
     float Timer = 0.0f;
 
     void Start()
@@ -19,12 +19,14 @@ public class Stop : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        
-       if (collision.gameObject.tag.Equals("Monster"))
+       if (collision.gameObject.tag.Equals("Monster") && collision.gameObject.activeSelf)
         {
            collision.gameObject.SetActive(false);
-           //Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
 
+            print("충돌");
+
+            collgameObject = true;
         }
     }
 
@@ -35,26 +37,19 @@ public class Stop : MonoBehaviour
     void Update()
     {
 
-    //private void OnTriggerEnter(Collider2D collision)
-    //{
-    //    if()
-    //}
-
-        if(!collgameObject)
+        if(collgameObject)
         {
           Timer += Time.deltaTime;
 
 
-          if(Timer <= 3.0f)
+          if(Timer > 3.0f)
            {
              Monster.gameObject.SetActive(true);
-             collgameObject = true;
 
 
              Timer = 0.0f;
+             collgameObject = false;
            }
         }
-
-
     }
 }
