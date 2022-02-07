@@ -70,8 +70,8 @@ public class Bricks1 : MonoBehaviour
             }
         }
 
-        //print("num red: " + numRed);
-        //Debug.Log(Player1Score);
+        print("num red: " + numRed);
+        Debug.Log(Player1Score);
         if (Player1Score > Player2score.Player2Score)
         {
             player1.SetActive(true);
