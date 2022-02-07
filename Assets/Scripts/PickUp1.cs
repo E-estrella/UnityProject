@@ -44,8 +44,6 @@ public class PickUp1 : MonoBehaviour
                 {
                     if (inven.slots[i].isEmpty)
                     {
-                        print("(inven.slots[i]: " + i);
-
                         Instantiate(slotItem2, inven.slots[i].slotObj2.transform, false);
                         inven.slots[i].isEmpty = false;
                         Destroy(this.gameObject);
