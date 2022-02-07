@@ -21,8 +21,9 @@ public class portion1 : MonoBehaviour
         Inventory3 inven3 = GetComponent<Inventory3>();
         for(int i = 0; i < Player1; i++)
         {
-            Instantiate(slotItem, inven3.slots[i].slotObj3.transform, false);
+            GameObject go = Instantiate(slotItem, inven3.slots[i].slotObj3.transform, false);
             inven3.slots[i].isEmpty = false;
+            inven3.slots[i].potionObj = go;
         }
     }
 }
