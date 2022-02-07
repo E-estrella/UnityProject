@@ -17,19 +17,19 @@ public class Stop : MonoBehaviour
     }
     
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
+    //void OnTriggerEnter2D(Collider2D collision)
+    //{
         
-       if (collision.gameObject.tag.Equals("Monster"))
-        {
-           collision.gameObject.SetActive(false);
-           //Destroy(collision.gameObject);
+       //if (collision.gameObject.tag.Equals("Monster"))
+        //{
+           //collision.gameObject.SetActive(false);
+           ///Destroy(collision.gameObject);
 
-        }
-    }
+        //}
+    //}
 
 
-    private void OnTriggerEnter(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
         {

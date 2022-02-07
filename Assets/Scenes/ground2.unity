@@ -14267,6 +14267,7 @@ GameObject:
   - component: {fileID: 1943801974}
   - component: {fileID: 1943801973}
   - component: {fileID: 1943801975}
+  - component: {fileID: 1943801976}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -14401,6 +14402,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e68029a618efc48a213cd62fe13c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1943801976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943801969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399d0cc3af9ec46f7a3e9f0b76d8c4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monster: {fileID: 0}
 --- !u!1 &2144340438
 GameObject:
   m_ObjectHideFlags: 0
