@@ -1289,7 +1289,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618414372}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &618414374
 Camera:
   m_ObjectHideFlags: 0
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5042ca5640ea0f42bb295abbeac0105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setTime: 10
+  setTime: 0.5
   countdownText: {fileID: 1018037498}
   timesup: {fileID: 8300000, guid: 242fa02f88aa7914f8f16f152836c02a, type: 3}
 --- !u!1 &626563914
@@ -2366,7 +2366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1017303431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7033,7 +7033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831685702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.35, y: 0.6, z: 0}
+  m_LocalPosition: {x: -0.66, y: 5.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2101440426}
