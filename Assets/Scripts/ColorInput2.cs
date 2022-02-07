@@ -22,7 +22,6 @@ public class ColorInput2 : MonoBehaviour
 
         if (settime.setTime > 0)
         {
-
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if (overCollider2d != null)
             {

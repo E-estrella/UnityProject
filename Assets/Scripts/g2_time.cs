@@ -7,8 +7,6 @@ public class g2_time : MonoBehaviour
 {
     public float setTime;
     public Text countdownText;
-    //public AudioClip timesup;
-
     GameObject next;
 
     // Start is called before the first frame update
@@ -30,8 +28,6 @@ public class g2_time : MonoBehaviour
         else if (setTime <= 0)
         {
             next.SetActive(true);
-            //AudioSource.PlayClipAtPoint(timesup, transform.position); // 오디오할당
-            //next.transform.GetComponent<Bricks1>().CountColor();
         }
         countdownText.text = Mathf.Round(setTime).ToString();
     }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Stop : MonoBehaviour
 {
-
     public GameObject Monster;
     bool collgameObject = false;
     float Timer = 0.0f;
@@ -15,11 +14,7 @@ public class Stop : MonoBehaviour
         if (collision.gameObject.tag.Equals("Monster") && collision.gameObject.activeSelf)
         {
             collision.gameObject.SetActive(false);
-           
-
             print("충돌");
-
-            //collgameObject = true;
 
             Inventory3 inven3 = GetComponent<Inventory3>();
             GameObject Score = GameObject.Find("ScoreManager");
@@ -43,15 +38,9 @@ public class Stop : MonoBehaviour
                     Destroy(this.gameObject);
                     collgameObject = true;
                 }
-                
             }
-
-            
         }
     }
-
-
-   
 
     void Update()
     {

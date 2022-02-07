@@ -6,8 +6,8 @@ public class PickUp : MonoBehaviour
 {
     //오디오 할당
     public AudioClip Boom;
-
     public GameObject explosionFactory;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
@@ -18,16 +18,5 @@ public class PickUp : MonoBehaviour
             GameObject explosion = Instantiate(explosionFactory);
             explosion.transform.position = transform.position;
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
