@@ -1289,7 +1289,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618414372}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &618414374
 Camera:
   m_ObjectHideFlags: 0
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5042ca5640ea0f42bb295abbeac0105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setTime: 0.5
+  setTime: 60
   countdownText: {fileID: 1018037498}
   timesup: {fileID: 8300000, guid: 242fa02f88aa7914f8f16f152836c02a, type: 3}
 --- !u!1 &626563914
@@ -2036,6 +2036,7 @@ GameObject:
   - component: {fileID: 841317641}
   - component: {fileID: 841317640}
   - component: {fileID: 841317639}
+  - component: {fileID: 841317638}
   m_Layer: 0
   m_Name: Treasure13
   m_TagString: Untagged
@@ -2043,6 +2044,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &841317638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841317637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &841317639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2366,7 +2381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1017303431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3507,7 +3522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639c18814d0eade4abc1e9aa8e0fcc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 200
+  moveSpeed: 5
 --- !u!212 &1464482388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3598,7 +3613,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 15
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -6926,7 +6941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b655dc825a61f54d9c8e635bc7f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 90
+  moveSpeed: 5
 --- !u!212 &1831685705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7017,7 +7032,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 15
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -7033,7 +7048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831685702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.66, y: 5.85, z: 0}
+  m_LocalPosition: {x: -9.44, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2101440426}
