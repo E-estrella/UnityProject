@@ -50,7 +50,7 @@ public class Stop : MonoBehaviour
             Timer += Time.deltaTime;
 
 
-            if (Timer > 3.0f)
+            if (Timer > 5.0f)
             {
                 Monster.gameObject.SetActive(true);
 
