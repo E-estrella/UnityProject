@@ -28,7 +28,12 @@ public class ColorInput2 : MonoBehaviour
             {
                 //print("Ãæµ¹!!");
 
-                overCollider2d.transform.GetComponent<Bricks2>().MakeColor(PlayerPosition);
+                Bricks2 brk2 = overCollider2d.transform.GetComponent<Bricks2>();
+
+                if (brk2)
+                {
+                    brk2.MakeColor(PlayerPosition);
+                }
             }
         }
     }
