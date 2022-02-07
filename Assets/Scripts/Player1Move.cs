@@ -7,11 +7,8 @@ public class Player1Move : MonoBehaviour
 {
     // 애니메이터 변수
     Animator anim;
-
     Rigidbody2D myRigid;
-
     public float moveSpeed;
-
     GameObject playerObj;
 
     // Start is called before the first frame update
