@@ -60,25 +60,17 @@ public class Bricks1 : MonoBehaviour
                     }
                 }
             }
+
             if (settime.setTime <= 0)
             {
-                //print("num clear: " + numRed);
-
                 Player1ScoreUI.text = " X " + Player1Score;
-
-
             }
         }
 
-        print("num red: " + numRed);
-        Debug.Log(Player1Score);
         if (Player1Score > Player2score.Player2Score)
         {
             player1.SetActive(true);
         }
         Player1ScoreUI.text = " X " + Player1Score;
-
     }
-
-
 }

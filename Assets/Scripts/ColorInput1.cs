@@ -23,14 +23,10 @@ public class ColorInput1 : MonoBehaviour
 
         if (settime.setTime > 0)
         {
-
             Collider2D overCollider2d = Physics2D.OverlapCircle(PlayerPosition, 0.01f, whatisPlatform);
             if (overCollider2d != null)
             {
                 Bricks1 brk1 = overCollider2d.transform.GetComponent<Bricks1>();
-
-                //print("Ãæµ¹!!");
-                // tile1;
 
                 if (brk1)
                 {

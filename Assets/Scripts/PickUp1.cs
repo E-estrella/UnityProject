@@ -13,9 +13,6 @@ public class PickUp1 : MonoBehaviour
     public AudioClip Get;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //오디오 클립
-
-
         if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
             GameObject explosion = Instantiate(explosionFactory2);

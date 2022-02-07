@@ -22,10 +22,4 @@ public class portion1 : MonoBehaviour
             inven3.slots[i].potionObj = go;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

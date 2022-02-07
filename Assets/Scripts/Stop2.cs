@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Stop2 : MonoBehaviour
 {
-
     public GameObject Monster;
     bool collgameObject = false;
     float Timer = 0.0f;
@@ -16,10 +15,7 @@ public class Stop2 : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
 
-
-            print("??");
-
-            //collgameObject = true;
+            print("Ãæµ¹!");
 
             Inventory3 inven3 = GetComponent<Inventory3>();
             GameObject Score = GameObject.Find("ScoreManager");
@@ -43,15 +39,9 @@ public class Stop2 : MonoBehaviour
                     Destroy(this.gameObject);
                     collgameObject = true;
                 }
-
             }
-
-
         }
     }
-
-
-
 
     void Update()
     {

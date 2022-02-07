@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class BGScroller : MonoBehaviour
 {
-
     private MeshRenderer render;
-
     public float speed;
     private float offset;
 
@@ -14,7 +12,6 @@ public class BGScroller : MonoBehaviour
     {
         render = GetComponent<MeshRenderer>();
     }
-
     
     void Update()
     {

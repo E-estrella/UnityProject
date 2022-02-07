@@ -28,4 +28,3 @@ public class portion2 : MonoBehaviour
         }
     }
 }
-;
