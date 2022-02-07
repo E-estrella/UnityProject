@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 240417550}
   - component: {fileID: 240417549}
   - component: {fileID: 240417551}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: tile
   m_Icon: {fileID: 0}
@@ -10394,7 +10394,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 3
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -14497,7 +14497,7 @@ GameObject:
   - component: {fileID: 1943801976}
   m_Layer: 6
   m_Name: Monster
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14561,7 +14561,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4944230376442633554, guid: c6ac0078f39473048b9f54d791095f35, type: 3}
+  m_Sprite: {fileID: 7441861488978599509, guid: 179f77b4a77508644bb0e4717e8add6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14569,7 +14569,7 @@ SpriteRenderer:
   m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1943801972
@@ -14660,21 +14660,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04677652, y: -0.03902453}
+  m_Offset: {x: -0.0033895113, y: -0.085867345}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.311109, y: 0.5179318}
+  m_Size: {x: 0.24912763, y: 0.4242462}
   m_EdgeRadius: 0
 --- !u!1 &2144340438
 GameObject:
