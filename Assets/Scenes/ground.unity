@@ -151,13 +151,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 97017940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &97017942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -322,13 +320,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 168785839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &168785841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -534,13 +530,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 326770133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &326770135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -870,13 +864,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 460344732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &460344734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2044,7 +2036,6 @@ GameObject:
   - component: {fileID: 841317641}
   - component: {fileID: 841317640}
   - component: {fileID: 841317639}
-  - component: {fileID: 841317638}
   m_Layer: 0
   m_Name: Treasure13
   m_TagString: PickUp
@@ -2052,22 +2043,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &841317638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841317637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
 --- !u!61 &841317639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2391,7 +2366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1017303431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2606,11 +2581,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1052165012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
+  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
-  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
+  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
+  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
+  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
+  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
 --- !u!61 &1052165014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6803,11 +6780,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821042364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
+  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
-  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
+  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
+  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
+  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
+  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
 --- !u!61 &1821042366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16962,13 +16941,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1884591842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8b87bbd0f5eca4d9b6e1bd575462b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f02b69751562024b9013414dfa83448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFactory2: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  slotItem: {fileID: 1307767459580813254, guid: 428a6c6924287fc4085c6ac8af7a80d0, type: 3}
-  slotItem2: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
-  Get: {fileID: 8300000, guid: 0a48c0be916c2624fa5fdbf38ea3c4de, type: 3}
+  Boom: {fileID: 8300000, guid: 756096cfa8122ca4785c30b7e6762789, type: 3}
+  explosionFactory: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
 --- !u!61 &1884591844
 BoxCollider2D:
   m_ObjectHideFlags: 0
