@@ -4,64 +4,55 @@ using UnityEngine;
 
 public class Stop : MonoBehaviour
 {
-
     public GameObject Monster;
     bool collgameObject = false;
     float Timer = 0.0f;
-
-    void Start()
-    {
-
-
-
-    }
-
-
+    int score1;
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Monster") && collision.gameObject.activeSelf)
         {
-            collision.gameObject.SetActive(false);
-
-            print("충돌");
-
-            collgameObject = true;
-
-            print("몬스터 충돌");
-
-
+            
+            //collgameObject = true;
 
 
             Inventory3 inven3 = GetComponent<Inventory3>();
+            GameObject Score = GameObject.Find("ScoreManager");
+            Score score = Score.GetComponent<Score>();
+            score1 = score.Player1Score;
 
-            print("inven3.slots.Count: " + inven3.slots.Count);
-
-            for (int i = inven3.slots.Count - 1; i >= 0; i--)
+            if(collision.gameObject.tag.Equals("Monster"))
             {
-                //print("몬스터 충돌");
-                if (!inven3.slots[i].isEmpty)
+                
+                if (score1 >= 1)
                 {
-                    //print("몬스터 충돌");
-
-                    inven3.slots[i].potionObj.SetActive(false);
-                    //Destroy(this.gameObject);
-                    break;
+                    print("충돌");
+                    collision.gameObject.SetActive(false);
+                    collgameObject = true;
+                    StopMonster();
                 }
+
+                if (score1 == 0)
+                {
+                    Destroy(this.gameObject);
+                }
+                
             }
+
         }
     }
 
-
-    void Update()
+    private void StopMonster()
     {
-
         if (collgameObject)
         {
             Timer += Time.deltaTime;
+            Debug.Log(Timer);
 
-
-            if (Timer > 3.0f)
+            if (Timer > 3)
             {
+                print("나타나!");
                 Monster.gameObject.SetActive(true);
 
 
