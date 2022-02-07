@@ -60,14 +60,14 @@ public class Bricks2 : MonoBehaviour
             }
             if (settime.setTime <= 0)
             {
-                print("num clear: " + numRed);
+                //print("num clear: " + numRed);
                 Player2ScoreUI.text = " X " + Player2Score;
 
             }
 
         }
-        print("num red: " + numRed);
-        Debug.Log(Player2Score);
+        //print("num red: " + numRed);
+        //Debug.Log(Player2Score);
         if (Player2Score > Player1score.Player1Score)
         {
             player2.SetActive(true);
