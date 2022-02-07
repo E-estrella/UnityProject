@@ -28,7 +28,10 @@ public class Stop : MonoBehaviour
             collgameObject = true;
 
             print("몬스터 충돌");
-            Inventory3 inven3 = collision.GetComponent<Inventory3>();
+            Inventory3 inven3 = GetComponent<Inventory3>();
+
+            print("inven3.slots.Count: " + inven3.slots.Count);
+
             for (int i = inven3.slots.Count - 1; i >= 0; i--)
             {
                 //print("몬스터 충돌");

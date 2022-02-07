@@ -372,7 +372,6 @@ GameObject:
   - component: {fileID: 240417548}
   - component: {fileID: 240417550}
   - component: {fileID: 240417549}
-  - component: {fileID: 240417551}
   m_Layer: 8
   m_Name: Tilemap
   m_TagString: tile
@@ -10152,18 +10151,6 @@ MonoBehaviour:
   Player2Score: 0
   Player1score: {fileID: 0}
   settime: {fileID: 0}
---- !u!114 &240417551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240417543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb045ced09ed9b40a319744e97b8b8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &252577152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10394,7 +10381,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -10525,7 +10512,7 @@ MonoBehaviour:
   PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 384
   settime: {fileID: 1475863047}
 --- !u!114 &388788918
 MonoBehaviour:
@@ -13065,7 +13052,6 @@ GameObject:
   - component: {fileID: 939857765}
   - component: {fileID: 939857763}
   - component: {fileID: 939857766}
-  - component: {fileID: 939857769}
   - component: {fileID: 939857767}
   - component: {fileID: 939857768}
   - component: {fileID: 939857770}
@@ -13240,7 +13226,7 @@ MonoBehaviour:
   PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 384
   settime: {fileID: 1475863047}
 --- !u!114 &939857767
 MonoBehaviour:
@@ -13270,20 +13256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player2: 0
   slotItem: {fileID: 2154172312311346802, guid: eff0e715974f41947a9ebacdd5101d09, type: 3}
---- !u!114 &939857769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939857760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3e7dd943f8ca49409811396aef300b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player2: 0
-  slotItem: {fileID: 0}
 --- !u!61 &939857770
 BoxCollider2D:
   m_ObjectHideFlags: 0

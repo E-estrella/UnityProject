@@ -21,8 +21,17 @@ public class Score : MonoBehaviour
         GameObject p2 = GameObject.Find("player2_outter");
         ScoreManager2 P2 = p2.GetComponent<ScoreManager2>();
 
-        Player1Score = P1.Player1Score;
-        Player2Score = P2.Player2Score;
+        if (P1)
+        {
+            Player1Score = P1.Player1Score;
+        }
+
+        //if (P2 != null)
+        if (P2)
+        {
+            Player2Score = P2.Player2Score;
+        }
+            
 
         //Debug.Log(Player1Score);
         //Debug.Log(Player2Score);
