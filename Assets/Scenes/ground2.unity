@@ -10512,7 +10512,7 @@ MonoBehaviour:
   PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 256
   settime: {fileID: 1475863047}
 --- !u!114 &388788918
 MonoBehaviour:
@@ -13226,7 +13226,7 @@ MonoBehaviour:
   PlayerPosition: {x: 0, y: 0, z: 0}
   whatisPlatform:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 256
   settime: {fileID: 1475863047}
 --- !u!114 &939857767
 MonoBehaviour:
