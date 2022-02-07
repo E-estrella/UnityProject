@@ -4,87 +4,97 @@ using UnityEngine;
 
 public class Stop : MonoBehaviour
 {
-   
-   public GameObject Monster;
-    bool collgameObject = true;
+
+    public GameObject Monster;
+    bool collgameObject = false;
     float Timer = 0.0f;
 
     void Start()
     {
-      
+
 
 
     }
-    
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        
-       if (collision.gameObject.tag.Equals("Monster"))
+        if (collision.gameObject.tag.Equals("Monster") && collision.gameObject.activeSelf)
         {
-           collision.gameObject.SetActive(false);
-           //Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+            
+            print("충돌");
 
-        }
-    }
+            collgameObject = true;
 
-
-    private void OnTriggerEnter(Collider2D collision)
-    {
-        if(collision.tag.Equals("player1")|| collision.tag.Equals("player2"))
-        {
-            if(collision.tag.Equals("player1"))
+            print("몬스터 충돌");
+            Inventory3 inven3 = collision.GetComponent<Inventory3>();
+            for (int i = inven3.slots.Count - 1; i >= 0; i--)
             {
-                Inventory3 inven3 = collision.GetComponent<Inventory3>();
-                for(int i = inven3.slots.Count - 1; i >= 0; i--)
+                //print("몬스터 충돌");
+                if (!inven3.slots[i].isEmpty)
                 {
-                    if(inven3.slots[i].isEmpty)
-                    {
-                        Destroy(this.gameObject);
-                        break;
-                    }
-                }
-            }
+                    //print("몬스터 충돌");
 
-            else if(collision.tag.Equals("player2"))
-            {
-                Inventory4 inven4 = collision.GetComponent<Inventory4>();
-                for(int i = inven4.slots.Count - 1; i >= 0;i--)
-                {
-                    if(inven4.slots[i].isEmpty)
-                    {
-                        Destroy(this.gameObject);
-                        break;
-                    }
+                    inven3.slots[i].potionObj.SetActive(false);
+                    //Destroy(this.gameObject);
+                    break;
                 }
             }
         }
+
+
+        //if (collision.gameObject.tag.Equals("Monster"))
+        //{
+
+            //print("몬스터 충돌");
+            //Inventory3 inven3 = collision.GetComponent<Inventory3>();
+            //for (int i = inven3.slots.Count - 1; i >= 0; i--)
+            //{
+                //print("몬스터 충돌");
+               // if (!inven3.slots[i].isEmpty)
+                //{
+                    //print("몬스터 충돌");
+
+                   // inven3.slots[i].potionObj.SetActive(false);
+                        //Destroy(this.gameObject);
+                   // break;
+                //}
+            //}
+            
+
+            //else if (collision.tag.Equals("player2"))
+            //{
+                //Inventory4 inven4 = collision.GetComponent<Inventory4>();
+                //for (int i = inven4.slots.Count - 1; i >= 0; i--)
+                //{
+                    //if (inven4.slots[i].isEmpty)
+                    //{
+                        //Destroy(this.gameObject);
+                        //break;
+                    //}
+                //}
+            //}
+        //}
     }
 
-
+    
     void Update()
     {
 
-    //private void OnTriggerEnter(Collider2D collision)
-    //{
-    //    if()
-    //}
-
-        if(!collgameObject)
+        if (collgameObject)
         {
-          Timer += Time.deltaTime;
+            Timer += Time.deltaTime;
 
 
-          if(Timer <= 3.0f)
-           {
-             Monster.gameObject.SetActive(true);
-             collgameObject = true;
+            if (Timer > 3.0f)
+            {
+                Monster.gameObject.SetActive(true);
 
 
-             Timer = 0.0f;
-           }
+                Timer = 0.0f;
+                collgameObject = false;
+            }
         }
-
-
     }
 }
