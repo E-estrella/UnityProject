@@ -22,17 +22,13 @@ public class Stop : MonoBehaviour
         if (collision.gameObject.tag.Equals("Monster") && collision.gameObject.activeSelf)
         {
             collision.gameObject.SetActive(false);
-            //Destroy(collision.gameObject);
-
+            
             print("충돌");
 
             collgameObject = true;
         }
-    }
 
 
-    private void OnTriggerEnter(Collider2D collision)
-    {
         if (collision.tag.Equals("player1") || collision.tag.Equals("player2"))
         {
             if (collision.tag.Equals("player1"))
@@ -62,7 +58,6 @@ public class Stop : MonoBehaviour
             }
         }
     }
-
 
     
     void Update()
